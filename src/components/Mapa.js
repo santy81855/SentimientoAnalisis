@@ -12,6 +12,7 @@ const Mapa = ({ coordinates }) => {
                     zoom={coordinates.zoom}
                     mapTypeId={"hybrid"}
                     streetViewControl={false}
+                    className={styles.map}
                 >
                     <Marker position={position} />
                 </Map>

@@ -1,0 +1,151 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--padding-inline-small);
+}
+
+.topRow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: var(--padding-inline-small);
+}
+
+.mapItem {
+    width: 100%;
+    height: 25rem;
+}
+
+.topItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 12rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: var(--padding-block-medium);
+    gap: var(--padding-block-small);
+}
+
+.bottomItemContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: var(--padding-inline-small);
+}
+
+.bottomItem {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    min-height: 12rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+}
+
+.chartContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.topItemTitleContainer .title {
+    font-size: var(--font-size-large);
+    font-weight: bold;
+}
+
+.topItemTitleContainer .subTitle {
+    font-size: var(--font-size-small);
+}
+
+.svgPi {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg);
+    position: relative;
+}
+
+.svgPiTrack {
+    stroke: #ddd;
+}
+
+.svgPiIndicator {
+    stroke: #07c;
+    stroke-dasharray: 251.2px;
+    /* DashArray = Track's or indicator's Circumference */
+    stroke-linecap: square;
+}
+
+.svgPiTrack,
+.svgPiIndicator {
+    cx: 50px;
+    cy: 50px;
+    r: 40px;
+    fill: transparent;
+    stroke-width: 10px;
+}
+/*
+progress = 25
+arcOffset = arcLength * ((100 - progress)/100) 
+          = 251.2 * ((100 - 25)/100) = 188.4
+*/
+.svgPi25 .svgPiIndicator {
+    stroke-dashoffset: 188.4px;
+    /* DashOffset = DashArray * ((100 - progress)/100) */
+}
+
+.svgPi43 .svgPiIndicator {
+    stroke-dashoffset: 143.4px;
+    /* DashOffset = DashArray * ((100 - progress)/100) */
+}
+
+.svgPi73 .svgPiIndicator {
+    stroke-dashoffset: 74.4px;
+    /* DashOffset = DashArray * ((100 - progress)/100) */
+}
+
+.chartItemContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circleText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.chartTitle {
+    font-size: var(--font-size-small);
+}
+
+@media screen and (max-width: 545px) {
+    .svgPi {
+        width: 80px;
+        height: 80px;
+    }
+
+    .svgPiTrack,
+    .svgPiIndicator {
+        cx: 40px;
+        cy: 40px;
+        r: 30px;
+        fill: transparent;
+        stroke-width: 5px;
+    }
+
+    .chartTitle {
+        max-width: 15ch;
+
+        overflow: hidden; /* Hide the overflow */
+        text-overflow: ellipsis; /* Show ellipsis when text overflows */
+        white-space: nowrap;
+    }
+}
