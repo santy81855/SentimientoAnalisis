@@ -20,8 +20,8 @@ export default function getCoordinates(municipio) {
             };
         case "Ciudad Bolívar":
             return {
-                latitude: 4.579486605898935,
-                longitude: -74.15755105293859,
+                latitude: 5.850597188636879,
+                longitude: -76.02107478919025,
                 zoom: 15,
             };
         case "Jardín":
@@ -105,7 +105,7 @@ export default function getCoordinates(municipio) {
     "Amagá",
     "Fredonia",
     "Andes" = 5.656850054649847, -75.87815590124973,
-    "Ciudad Bolívar" = 4.579486605898935, -74.15755105293859,
+    "Ciudad Bolívar" = 5.850597188636879, -76.02107478919025,
     "Jardín" = 5.598646180731506, -75.81948978778762,
     "Jericó" = 5.791238194896293, -75.78512186680732,
     "La Pintada" = 5.747072490594706, -75.60665830094318,

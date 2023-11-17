@@ -22,7 +22,7 @@ const DashboardGrid = ({ coordinates }) => {
                             <circle className={styles.svgPiIndicator} />
                         </svg>
                         <p className={styles.circleText}>25%</p>
-                        <p className={styles.chartTitle}>SEGURIDAD</p>
+                        <p className={styles.chartTitle}>GASTRONOMIA</p>
                     </div>
                     <div className={styles.chartItemContainer}>
                         <svg className={`${styles.svgPi} ${styles.svgPi43}`}>
@@ -30,9 +30,7 @@ const DashboardGrid = ({ coordinates }) => {
                             <circle className={styles.svgPiIndicator} />
                         </svg>
                         <p className={styles.circleText}>43%</p>
-                        <p className={styles.chartTitle}>
-                            SATISFACCIÓN HOTELERA (HSI)
-                        </p>
+                        <p className={styles.chartTitle}>GENERAL</p>
                     </div>
                     <div className={styles.chartItemContainer}>
                         <svg className={`${styles.svgPi} ${styles.svgPi73}`}>
@@ -40,7 +38,9 @@ const DashboardGrid = ({ coordinates }) => {
                             <circle className={styles.svgPiIndicator} />
                         </svg>
                         <p className={styles.circleText}>73%</p>
-                        <p className={styles.chartTitle}>PRODUCTO (TPI) </p>
+                        <p className={styles.chartTitle}>
+                            SATISFACCIÓN HOTELERA (HSI)
+                        </p>
                     </div>
                 </div>
             </div>
