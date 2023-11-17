@@ -6,6 +6,7 @@ export default function Home() {
     return (
         <main className={styles.main}>
             <section className={styles.headerSection}>
+                <p className={styles.companyName}>ASResearch</p>
                 <Image
                     src="/images/homepage/antioquia.jpg"
                     layout="fill"

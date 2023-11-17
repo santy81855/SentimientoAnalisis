@@ -24,10 +24,11 @@
     justify-content: space-around;
     width: 100%;
     min-height: 12rem;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: var(--border-radius);
     padding: var(--padding-block-medium);
     gap: var(--padding-block-small);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .bottomItemContainer {
@@ -44,6 +45,7 @@
     min-height: 12rem;
     background-color: white;
     border-radius: var(--border-radius);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .chartContainer {

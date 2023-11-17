@@ -16,11 +16,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     gap: var(--gap-small);
     position: relative;
     height: 20rem;
     width: 100%;
+}
+
+.companyName {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: var(--padding-block-small) var(--padding-inline-small);
+    font-size: var(--font-size-small);
+    z-index: 1;
+    color: white;
+    font-weight: bold;
 }
 
 .headerSection::after {
@@ -39,9 +50,10 @@
     gap: var(--gap-medium);
     text-align: center;
     z-index: 1;
+    max-width: 80ch;
 }
 
-.headerSection h1 {
+.titleContainer h1 {
     z-index: 1;
     font-size: var(--font-size-xlarge);
     color: white;
@@ -49,7 +61,7 @@
     font-weight: bold;
 }
 
-.headerSection p {
+.titleContainer p {
     z-index: 1;
     font-size: var(--font-size-medium);
     color: white;
