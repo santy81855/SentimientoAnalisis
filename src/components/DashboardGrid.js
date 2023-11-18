@@ -47,12 +47,8 @@ const DashboardGrid = ({ coordinates }) => {
             <div className={styles.bottomItemContainer}>
                 <div className={styles.bottomItem}>
                     <div className={styles.bottomItemTitleContainer}>
-                        <p className={styles.title}>
-                            Calificacion de Restaurantes
-                        </p>
-                        <p className={styles.subTitle}>
-                            Octubre / variación interanual
-                        </p>
+                        <p className={styles.title}>Restaurantes</p>
+                        <p className={styles.subTitle}>calificacion de 1 a 5</p>
                     </div>
                     <div className={styles.ratingContainer}>
                         <div className={styles.ratingItem}>
