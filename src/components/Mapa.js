@@ -14,6 +14,8 @@ const Mapa = ({ coordinates }) => {
                     height={900}
                     alt="Background image"
                     className={styles.image}
+                    quality={65}
+                    priority={true}
                 />
             </div>
             <APIProvider apiKey={"AIzaSyBXp3swOU8DtCEqJRSHPd5axh0VmLIfIoo"}>

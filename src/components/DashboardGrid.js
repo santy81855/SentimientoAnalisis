@@ -45,8 +45,48 @@ const DashboardGrid = ({ coordinates }) => {
                 </div>
             </div>
             <div className={styles.bottomItemContainer}>
-                <div className={styles.bottomItem}>item</div>
-                <div className={styles.bottomItem}>item</div>
+                <div className={styles.bottomItem}>
+                    <div className={styles.bottomItemTitleContainer}>
+                        <p className={styles.title}>
+                            Calificacion de Restaurantes
+                        </p>
+                        <p className={styles.subTitle}>
+                            Octubre / variación interanual
+                        </p>
+                    </div>
+                    <div className={styles.ratingContainer}>
+                        <div className={styles.ratingItem}>
+                            <p className={styles.name}>Restaurante Soccer 7</p>
+                            <div className={styles.ratingBarBackground}>
+                                <div className={styles.ratingBar60}></div>
+                            </div>
+                        </div>
+                        <div className={styles.ratingItem}>
+                            <p className={styles.name}>
+                                La Curva Del Gordo - Amagá
+                            </p>
+                            <div className={styles.ratingBarBackground}>
+                                <div className={styles.ratingBar100}></div>
+                            </div>
+                        </div>
+                        <div className={styles.ratingItem}>
+                            <p className={styles.name}>
+                                Restaurante Uripa Amaga
+                            </p>
+                            <div className={styles.ratingBarBackground}>
+                                <div className={styles.ratingBar40}></div>
+                            </div>
+                        </div>
+                        <div className={styles.ratingItem}>
+                            <p className={styles.name}>
+                                Sacramento Restaurante Bar
+                            </p>
+                            <div className={styles.ratingBarBackground}>
+                                <div className={styles.ratingBar80}></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     );

@@ -40,12 +40,86 @@
 
 .bottomItem {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(--padding-block-small);
+    padding: var(--padding-block-medium);
     flex-grow: 1;
     min-height: 12rem;
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ratingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--padding-block-small);
+}
+
+.ratingItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: var(--padding-inline-small);
+}
+
+.ratingItem .name {
+    font-size: var(--font-size-small);
+    width: 20%;
+}
+
+.ratingItem .ratingBarBackground {
+    width: 50%;
+    min-width: 250px;
+    height: 2rem;
+    width: 70%;
+    background-color: lightgrey;
+    flex-grow: 1;
+    position: relative;
+}
+
+.ratingItem .ratingBar20 {
+    position: absolute;
+    z-index: 1;
+    width: 20%;
+    height: 2rem;
+    background-color: #07c;
+}
+
+.ratingItem .ratingBar40 {
+    position: absolute;
+    z-index: 1;
+    width: 40%;
+    height: 2rem;
+    background-color: #07c;
+}
+
+.ratingItem .ratingBar60 {
+    position: absolute;
+    z-index: 1;
+    width: 60%;
+    height: 2rem;
+    background-color: #07c;
+}
+
+.ratingItem .ratingBar80 {
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+    height: 2rem;
+    background-color: #07c;
+}
+
+.ratingItem .ratingBar100 {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 2rem;
+    background-color: #07c;
 }
 
 .chartContainer {
@@ -61,6 +135,15 @@
 }
 
 .topItemTitleContainer .subTitle {
+    font-size: var(--font-size-small);
+}
+
+.bottomItemTitleContainer .title {
+    font-size: var(--font-size-large);
+    font-weight: bold;
+}
+
+.bottomItemTitleContainer .subTitle {
     font-size: var(--font-size-small);
 }
 
@@ -152,5 +235,16 @@ arcOffset = arcLength * ((100 - progress)/100)
         overflow: hidden; /* Hide the overflow */
         text-overflow: ellipsis; /* Show ellipsis when text overflows */
         white-space: nowrap;
+    }
+
+    .ratingItem {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--padding-block-small);
+    }
+
+    .ratingItem .name {
+        width: 100%;
+        text-align: center;
     }
 }
