@@ -17,7 +17,8 @@
     z-index: 1;
     font-weight: bold;
     min-width: 200px;
-    width: 40%;
+    max-height: 50%;
+    max-width: 40%;
     aspect-ratio: 16/9;
 }
 
