@@ -17,19 +17,19 @@ const DashboardGrid = ({ coordinates }) => {
                 </div>
                 <div className={styles.chartContainer}>
                     <div className={styles.chartItemContainer}>
-                        <svg className={`${styles.svgPi} ${styles.svgPi25}`}>
+                        <svg className={`${styles.svgPi} ${styles.svgPi85}`}>
                             <circle className={styles.svgPiTrack} />
                             <circle className={styles.svgPiIndicator} />
                         </svg>
-                        <p className={styles.circleText}>25%</p>
+                        <p className={styles.circleText}>85%</p>
                         <p className={styles.chartTitle}>GASTRONOMIA</p>
                     </div>
                     <div className={styles.chartItemContainer}>
-                        <svg className={`${styles.svgPi} ${styles.svgPi43}`}>
+                        <svg className={`${styles.svgPi} ${styles.svgPi77}`}>
                             <circle className={styles.svgPiTrack} />
                             <circle className={styles.svgPiIndicator} />
                         </svg>
-                        <p className={styles.circleText}>43%</p>
+                        <p className={styles.circleText}>77%</p>
                         <p className={styles.chartTitle}>GENERAL</p>
                     </div>
                     <div className={styles.chartItemContainer}>
@@ -51,6 +51,17 @@ const DashboardGrid = ({ coordinates }) => {
                         <p className={styles.subTitle}>calificacion de 1 a 5</p>
                     </div>
                     <div className={styles.ratingContainer}>
+                        <div className={styles.ratingItem}>
+                            <p className={styles.name}></p>
+                            <div className={styles.ratingBarLegend}>
+                                <p>0</p>
+                                <p>1</p>
+                                <p>2</p>
+                                <p>3</p>
+                                <p>4</p>
+                                <p>5</p>
+                            </div>
+                        </div>
                         <div className={styles.ratingItem}>
                             <p className={styles.name}>Restaurante Soccer 7</p>
                             <div className={styles.ratingBarBackground}>

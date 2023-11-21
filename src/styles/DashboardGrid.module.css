@@ -72,6 +72,24 @@
     width: 20%;
 }
 
+.ratingItem .ratingBarLegend {
+    width: 50%;
+    min-width: 250px;
+    height: 2rem;
+    width: 70%;
+    flex-grow: 1;
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-inline-small);
+}
+
+.ratingItem .ratingBarLegend p {
+    font-size: var(--font-size-medium);
+}
+
 .ratingItem .ratingBarBackground {
     width: 50%;
     min-width: 250px;
@@ -199,6 +217,14 @@ arcOffset = arcLength * ((100 - progress)/100)
     /* DashOffset = DashArray * ((100 - progress)/100) */
 }
 
+.svgPi77 .svgPiIndicator {
+    stroke-dashoffset: 58.08px; /* DashOffset = DashArray * ((100 - progress)/100) */
+}
+
+.svgPi85 .svgPiIndicator {
+    stroke-dashoffset: 40.6px; /* DashOffset = DashArray * ((100 - progress)/100) */
+}
+
 .chartItemContainer {
     position: relative;
     display: flex;
@@ -252,5 +278,9 @@ arcOffset = arcLength * ((100 - progress)/100)
     .ratingItem .name {
         width: 100%;
         text-align: center;
+    }
+
+    .ratingItem .ratingBarLegend {
+        display: none;
     }
 }

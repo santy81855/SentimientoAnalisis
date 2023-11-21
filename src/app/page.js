@@ -16,10 +16,13 @@ export default function Home() {
                 <div className={styles.titleContainer}>
                     <h1>Antioquia</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vestibulum luctus ex vel sapien facilisis, ac venenatis
-                        tortor ullamcorper. Maecenas eget tincidunt nulla. Sed
-                        cursus lacinia nulla.
+                        Análisis de sentimientos y percepción en redes sociales
+                        de los municipios en el suroeste antioqueño. <br />
+                        Aquí se detallan algunas de las razones por las cuales
+                        el turismo podría ser importante en el suroeste
+                        antioqueño teniendo en cuenta el impacto tanto en el
+                        desarrollo económico como en el bienestar de la
+                        comunidad.
                     </p>
                 </div>
             </section>

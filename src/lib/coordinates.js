@@ -103,7 +103,7 @@ export default function getCoordinates(municipio) {
                 latitude: 5.54919140601753,
                 longitude: -75.64471547110624,
                 zoom: 16,
-                url: "/images/mapa/caramanta.jpg",
+                url: "/images/mapa/caramanta.png",
             };
         case "Montebello":
             return {
