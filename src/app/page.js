@@ -2,13 +2,14 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import SeccionMapaInteractiva from "../components/SeccionMapaInteractiva";
 
-export default function Home() {
+export default function Home({ searchParams }) {
+    const municipio = searchParams.municipio || "Amagá";
     return (
         <main className={styles.main}>
             <section className={styles.headerSection}>
                 <p className={styles.companyName}>ASResearch</p>
                 <Image
-                    src="/images/homepage/antioquia.jpg"
+                    src="/images/mapa/andes.jpg"
                     layout="fill"
                     objectFit="cover"
                     alt="Background image"
@@ -27,7 +28,7 @@ export default function Home() {
                 </div>
             </section>
             <section className={styles.mapSection}>
-                <SeccionMapaInteractiva />
+                <SeccionMapaInteractiva municipio={municipio} />
             </section>
         </main>
     );

@@ -1,9 +1,14 @@
 "use client";
 import styles from "../styles/Mapa.module.css";
 import Image from "next/image";
+import getCoordinates from "../lib/coordinates";
 import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
+import { useSearchParams } from "next/navigation";
 
-const Mapa = ({ coordinates }) => {
+const Mapa = () => {
+    const searchParams = useSearchParams();
+    const municipio = searchParams.get("municipio") || "Amagá";
+    const coordinates = getCoordinates(municipio);
     const position = { lat: coordinates.latitude, lng: coordinates.longitude };
     return (
         <main className={styles.main}>

@@ -1,12 +1,14 @@
 import styles from "../styles/DashboardGrid.module.css";
 import Mapa from "./Mapa";
+import Restaurantes from "./Restaurantes";
+import Hoteles from "./Hoteles";
 
 //svgPi svgPi25
-const DashboardGrid = ({ coordinates }) => {
+const DashboardGrid = ({ municipio }) => {
     return (
         <main className={styles.main}>
             <div className={styles.mapItem}>
-                <Mapa coordinates={coordinates} />
+                <Mapa />
             </div>
             <div className={styles.topItem}>
                 <div className={styles.topItemTitleContainer}>
@@ -46,53 +48,12 @@ const DashboardGrid = ({ coordinates }) => {
             </div>
             <div className={styles.bottomItemContainer}>
                 <div className={styles.bottomItem}>
-                    <div className={styles.bottomItemTitleContainer}>
-                        <p className={styles.title}>Restaurantes</p>
-                        <p className={styles.subTitle}>calificacion de 1 a 5</p>
-                    </div>
-                    <div className={styles.ratingContainer}>
-                        <div className={styles.ratingItem}>
-                            <p className={styles.name}></p>
-                            <div className={styles.ratingBarLegend}>
-                                <p>0</p>
-                                <p>1</p>
-                                <p>2</p>
-                                <p>3</p>
-                                <p>4</p>
-                                <p>5</p>
-                            </div>
-                        </div>
-                        <div className={styles.ratingItem}>
-                            <p className={styles.name}>Restaurante Soccer 7</p>
-                            <div className={styles.ratingBarBackground}>
-                                <div className={styles.ratingBar60}></div>
-                            </div>
-                        </div>
-                        <div className={styles.ratingItem}>
-                            <p className={styles.name}>
-                                La Curva Del Gordo - Amagá
-                            </p>
-                            <div className={styles.ratingBarBackground}>
-                                <div className={styles.ratingBar100}></div>
-                            </div>
-                        </div>
-                        <div className={styles.ratingItem}>
-                            <p className={styles.name}>
-                                Restaurante Uripa Amaga
-                            </p>
-                            <div className={styles.ratingBarBackground}>
-                                <div className={styles.ratingBar40}></div>
-                            </div>
-                        </div>
-                        <div className={styles.ratingItem}>
-                            <p className={styles.name}>
-                                Sacramento Restaurante Bar
-                            </p>
-                            <div className={styles.ratingBarBackground}>
-                                <div className={styles.ratingBar80}></div>
-                            </div>
-                        </div>
-                    </div>
+                    <Restaurantes municipio={municipio} />
+                </div>
+            </div>
+            <div className={styles.bottomItemContainer}>
+                <div className={styles.bottomItem}>
+                    <Hoteles municipio={municipio} />
                 </div>
             </div>
         </main>

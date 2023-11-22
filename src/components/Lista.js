@@ -1,8 +1,9 @@
 "use client";
 import "react-dropdown/style.css";
 import Dropdown from "react-dropdown";
-import getCoordinates from "../lib/coordinates";
 import styles from "../styles/Lista.module.css";
+
+import { useRouter } from "next/navigation";
 
 const options = [
     "Amagá",
@@ -25,15 +26,16 @@ const options = [
 
 const defaultOption = options[0];
 
-const Lista = ({ municipio, setMunicipio, setCoordinates }) => {
+const Lista = ({ municipio }) => {
+    const router = useRouter();
     return (
         <Dropdown
             className={styles.dropdown}
             options={options}
             value={municipio}
             onChange={(e) => {
-                setMunicipio(e.value);
-                setCoordinates(getCoordinates(e.value));
+                // setMunicipio(e.value);
+                router.replace(`?municipio=${e.value}`);
             }}
             placeholder="Selecciona un municipio"
         />
