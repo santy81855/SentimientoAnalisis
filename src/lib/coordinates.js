@@ -33,25 +33,33 @@ export default function getCoordinates(municipio) {
                         name: "Hotel Casa Real Amaga",
                         rating: 4,
                         type: "Urbano",
-                        ota: false,
+                        otp: false,
+                        alto: 95000,
+                        bajo: 90000,
                     },
                     {
                         name: "Hotel Campestre Amaga",
                         rating: 3,
                         type: "Urbano",
-                        ota: false,
+                        otp: false,
+                        alto: 70000,
+                        bajo: 70000,
                     },
                     {
                         name: "Hotel Glamping la Polka",
                         rating: 2,
                         type: "Campestre",
-                        ota: false,
+                        otp: false,
+                        alto: 489000,
+                        bajo: 289000,
                     },
                     {
                         name: "Hotel Hacienda La Bonita",
                         rating: 5,
                         type: "Campestre",
-                        ota: true,
+                        otp: true,
+                        alto: 421000,
+                        bajo: 144000,
                     },
                 ],
             };
@@ -83,25 +91,33 @@ export default function getCoordinates(municipio) {
                         name: "Prana Cabañas Fredonia",
                         rating: 4,
                         type: "Campestre",
-                        ota: false,
+                        otp: false,
+                        alto: 160000,
+                        bajo: 140000,
                     },
                     {
                         name: "Glamping Encanto de Luna",
                         rating: 3,
                         type: "Campestre",
-                        ota: false,
+                        otp: true,
+                        alto: 350000,
+                        bajo: 300000,
                     },
                     {
                         name: "Hotel Boutique Tahití",
                         rating: 2,
                         type: "Campestre",
-                        ota: true,
+                        otp: true,
+                        alto: 659000,
+                        bajo: 644120,
                     },
                     {
                         name: "Hotel Hacienda La Sierra",
                         rating: 5,
                         type: "Campestre",
-                        ota: true,
+                        otp: true,
+                        alto: 750000,
+                        bajo: 550000,
                     },
                 ],
             };
@@ -133,30 +149,39 @@ export default function getCoordinates(municipio) {
                         type: "No Aplica",
                     },
                 ],
+                // hotels in andes: Hotel San Juan Andes, Finca Hotel Arrayanes, Altos del Molino, Hotel Ecológico Otrolado Lodge
                 hotels: [
                     {
                         name: "Hotel San Juan Andes",
                         rating: 4,
                         type: "Urbano",
-                        ota: false,
+                        otp: false,
+                        alto: 94000,
+                        bajo: 94000,
                     },
                     {
                         name: "Finca Hotel Arrayanes",
                         rating: 3,
                         type: "Campestre",
-                        ota: false,
+                        otp: false,
+                        alto: 220000,
+                        bajo: 200000,
                     },
                     {
                         name: "Altos del Molino",
                         rating: 2,
                         type: "Campestre",
-                        ota: false,
+                        otp: true,
+                        alto: 120000,
+                        bajo: 105000,
                     },
                     {
                         name: "Hotel Ecológico Otrolado Lodge",
                         rating: 5,
                         type: "Campestre",
-                        ota: true,
+                        otp: true,
+                        alto: 160000,
+                        bajo: 140000,
                     },
                 ],
             };
@@ -187,26 +212,32 @@ export default function getCoordinates(municipio) {
                 hotels: [
                     {
                         name: "Hotel Los Vitrales",
-                        rating: 4,
                         type: "Urbano",
+                        alto: 120000,
+                        bajo: 92000,
                         ota: false,
                     },
                     {
                         name: "Residencia Su Casa",
-                        rating: 3,
                         type: "Urbano",
+                        alto: 65000,
+                        bajo: 65000,
                         ota: false,
                     },
                     {
+                        municipio: "Ciudad Bolivar",
                         name: "Hotel Farallones del Citara",
-                        rating: 2,
                         type: "Campestre",
+                        alto: 450000,
+                        bajo: 360000,
                         ota: false,
                     },
                     {
+                        municipio: "Ciudad Bolivar",
                         name: "Finca Hotel Lagos del Citara",
-                        rating: 5,
                         type: "Campestre",
+                        alto: 220000,
+                        bajo: 200000,
                         ota: false,
                     },
                 ],
@@ -234,33 +265,43 @@ export default function getCoordinates(municipio) {
                 ],
                 hotels: [
                     {
+                        municipio: "Jardin",
                         name: "Casa Passiflora Hotel Boutique",
-                        rating: 4,
                         type: "Campestre",
+                        alto: 746000,
+                        bajo: 516000,
                         ota: true,
                     },
                     {
+                        municipio: "Jardin",
                         name: "Gulupa Ecolodge",
-                        rating: 3,
                         type: "Campestre",
+                        alto: 502800,
+                        bajo: 342000,
                         ota: true,
                     },
                     {
+                        municipio: "Jardin",
                         name: "Candileja hostel",
-                        rating: 2,
                         type: "Urbano",
+                        alto: 129000,
+                        bajo: 119000,
                         ota: true,
                     },
                     {
+                        municipio: "Jardin",
                         name: "Hotel Plantacion",
-                        rating: 5,
                         type: "Urbano",
+                        alto: 424000,
+                        bajo: 400000,
                         ota: true,
                     },
                     {
+                        municipio: "Jardin",
                         name: "Hotel Lago Valdivia",
-                        rating: 5,
                         type: "Campestre",
+                        alto: 798000,
+                        bajo: 776000,
                         ota: true,
                     },
                 ],
@@ -300,27 +341,35 @@ export default function getCoordinates(municipio) {
                 ],
                 hotels: [
                     {
+                        municipio: "Jerico",
                         name: "Hotel Atenas Jericó",
-                        rating: 4,
                         type: "Urbano",
-                        ota: false,
+                        alto: 200000,
+                        bajo: 140000,
+                        ota: true,
                     },
                     {
+                        municipio: "Jerico",
                         name: "Casa Jacaranda Hotel Boutique",
-                        rating: 3,
                         type: "Campestre",
-                        ota: false,
+                        alto: 490000,
+                        bajo: 550000,
+                        ota: true,
                     },
                     {
+                        municipio: "Jerico",
                         name: "Hotel Santa Laura",
-                        rating: 2,
                         type: "Urbano",
-                        ota: false,
+                        alto: 350000,
+                        bajo: 210000,
+                        ota: true,
                     },
                     {
+                        municipio: "Jerico",
                         name: "Hotel de Cauca Viejo",
-                        rating: 5,
                         type: "Campestre",
+                        alto: 858000,
+                        bajo: 537000,
                         ota: true,
                     },
                 ],
@@ -355,28 +404,36 @@ export default function getCoordinates(municipio) {
                 ],
                 hotels: [
                     {
+                        municipio: "La Pintada",
                         name: "Hotel Real Dinastia",
-                        rating: 4,
                         type: "Campestre",
+                        alto: 428000,
+                        bajo: 303000,
                         ota: true,
                     },
                     {
+                        municipio: "La Pintada",
                         name: "Hotel Villa Camila",
-                        rating: 3,
                         type: "Campestre",
+                        alto: 405000,
+                        bajo: 356000,
                         ota: true,
                     },
                     {
+                        municipio: "La Pintada",
                         name: "Hotel Los Molinos",
-                        rating: 2,
                         type: "Urbano",
-                        ota: true,
+                        alto: 85000,
+                        bajo: 60000,
+                        ota: false,
                     },
                     {
+                        municipio: "La Pintada",
                         name: "Hotel Omni La Pintada",
-                        rating: 5,
                         type: "Urbano",
-                        ota: true,
+                        alto: 110000,
+                        bajo: 80000,
+                        ota: false,
                     },
                 ],
             };
@@ -410,27 +467,39 @@ export default function getCoordinates(municipio) {
                 ],
                 hotels: [
                     {
+                        municipio: "Santa Barbara",
                         name: "Anthalia Glamping",
-                        rating: 4,
                         type: "Campestre",
+                        alto: 673000,
+                        bajo: 376000,
+
                         ota: true,
                     },
                     {
+                        municipio: "Santa Barbara",
                         name: "Finca Villa Celina",
-                        rating: 3,
                         type: "Campestre",
+                        alto: 325000,
+                        bajo: 240000,
+
                         ota: false,
                     },
                     {
+                        municipio: "Santa Barbara",
                         name: "Hotel el Castillo",
-                        rating: 2,
                         type: "Urbano",
+                        alto: 150000,
+                        bajo: 130000,
+
                         ota: false,
                     },
                     {
-                        name: "Cabañas la Amapolita",
-                        rating: 5,
+                        municipio: "Santa Barbara",
+                        name: "Cabañas la Amapolita (Versalles - St. B)",
                         type: "Campestre",
+                        alto: 420000,
+                        bajo: 350000,
+
                         ota: true,
                     },
                 ],
@@ -465,27 +534,39 @@ export default function getCoordinates(municipio) {
                 ],
                 hotels: [
                     {
+                        municipio: "Tamesis",
                         name: "Casa Hotel La Albertina",
-                        rating: 4,
-                        type: "Urbano",
+                        type: "Urbano/Campestre",
+                        alto: 250000,
+                        bajo: 250000,
+
                         ota: false,
                     },
                     {
+                        municipio: "Tamesis",
                         name: "Monte Mágico Chalets",
-                        rating: 3,
                         type: "Campestre",
-                        ota: false,
+                        alto: 380000,
+                        bajo: 360000,
+
+                        ota: true,
                     },
                     {
+                        municipio: "Tamesis",
                         name: "Hotel Vegas del Rio",
-                        rating: 2,
                         type: "Urbano",
+                        alto: 115000,
+                        bajo: 100000,
+
                         ota: false,
                     },
                     {
+                        municipio: "Tamesis",
                         name: "Hotel Boutique Cetro",
-                        rating: 5,
                         type: "Campestre",
+                        alto: 400000,
+                        bajo: 295000,
+
                         ota: false,
                     },
                 ],
@@ -513,28 +594,40 @@ export default function getCoordinates(municipio) {
                 ],
                 hotels: [
                     {
+                        municipio: "Valparaiso",
                         name: "Hotel la Ceiba",
-                        rating: 4,
                         type: "Urbano",
+                        alto: 168000,
+                        bajo: 180000,
+
                         ota: true,
                     },
                     {
+                        municipio: "Valparaiso",
                         name: "Hotel Las Vegas",
-                        rating: 3,
                         type: "Urbano",
-                        ota: true,
+                        alto: 75000,
+                        bajo: 65000,
+
+                        ota: false,
                     },
                     {
+                        municipio: "Valparaiso",
                         name: "Hotel Guadalejo",
-                        rating: 2,
                         type: "Campestre",
-                        ota: true,
+                        alto: 280000,
+                        bajo: 340000,
+
+                        ota: false,
                     },
                     {
+                        municipio: "Valparaiso",
                         name: "La Posada Del Palmar",
-                        rating: 5,
                         type: "Urbano",
-                        ota: true,
+                        alto: 85000,
+                        bajo: 75000,
+
+                        ota: false,
                     },
                 ],
             };
@@ -568,27 +661,39 @@ export default function getCoordinates(municipio) {
                 ],
                 hotels: [
                     {
+                        municipio: "Venecia",
                         name: "Hotel Granja del Café",
-                        rating: 4,
                         type: "Campestre",
+                        alto: 429000,
+                        bajo: 290000,
+
                         ota: true,
                     },
                     {
+                        municipio: "Venecia",
                         name: "La Divisa Hotel Boutique",
-                        rating: 3,
                         type: "Campestre",
+                        alto: 607000,
+                        bajo: 412000,
+
                         ota: true,
                     },
                     {
+                        municipio: "Venecia",
                         name: "Nativo Hostel Venecia",
-                        rating: 2,
                         type: "Urbano",
+                        alto: 174000,
+                        bajo: 122000,
+
                         ota: true,
                     },
                     {
+                        municipio: "Venecia",
                         name: "Finca Hotel Carmonia del Bosque",
-                        rating: 5,
                         type: "Campestre",
+                        alto: 286000,
+                        bajo: 286000,
+
                         ota: true,
                     },
                 ],
@@ -623,27 +728,39 @@ export default function getCoordinates(municipio) {
                 ],
                 hotels: [
                     {
-                        name: "Hotel El Viajero",
-                        rating: 4,
+                        municipio: "Urrao",
+                        name: "Hotel Colonial Urrao",
                         type: "Urbano",
+                        alto: 95000,
+                        bajo: 90000,
+
                         ota: false,
                     },
                     {
-                        name: "Hotel La Casona",
-                        rating: 3,
+                        municipio: "Urrao",
+                        name: "Hotel Flores del Paraiso Urrao",
                         type: "Urbano",
+                        alto: 136000,
+                        bajo: 126000,
+
                         ota: false,
                     },
                     {
-                        name: "Hotel La Cabaña",
-                        rating: 2,
+                        municipio: "Urrao",
+                        name: "Parque Orquideas",
                         type: "Urbano",
-                        ota: false,
+                        alto: 80000,
+                        bajo: 80000,
+
+                        ota: true,
                     },
                     {
-                        name: "Hotel La Cabaña",
-                        rating: 5,
+                        municipio: "Urrao",
+                        name: "Hotel el Turista de Urrao",
                         type: "Urbano",
+                        alto: 70000,
+                        bajo: 70000,
+
                         ota: false,
                     },
                 ],
@@ -678,28 +795,13 @@ export default function getCoordinates(municipio) {
                 ],
                 hotels: [
                     {
-                        name: "Hotel y Restaurante Balcones del Cauca",
-                        rating: 4,
-                        type: "Urbano",
-                        ota: false,
-                    },
-                    {
-                        name: "Hotel La Casona",
-                        rating: 3,
-                        type: "Urbano",
-                        ota: false,
-                    },
-                    {
-                        name: "Hotel La Cabaña",
-                        rating: 2,
-                        type: "Urbano",
-                        ota: false,
-                    },
-                    {
-                        name: "Hotel La Cabaña",
-                        rating: 5,
-                        type: "Urbano",
-                        ota: false,
+                        municipio: "Tarso",
+                        name: "Reserva la Colina",
+                        type: "Campestre",
+                        alto: 165000,
+                        bajo: 145000,
+
+                        ota: true,
                     },
                 ],
             };
@@ -733,27 +835,12 @@ export default function getCoordinates(municipio) {
                 ],
                 hotels: [
                     {
-                        name: "Hotel La Casona",
-                        rating: 4,
-                        type: "No Aplica",
-                        ota: false,
-                    },
-                    {
-                        name: "Hotel La Cabaña",
-                        rating: 3,
-                        type: "No Aplica",
-                        ota: false,
-                    },
-                    {
-                        name: "Hotel La Cabaña",
-                        rating: 2,
-                        type: "No Aplica",
-                        ota: false,
-                    },
-                    {
-                        name: "Hotel La Cabaña",
-                        rating: 5,
-                        type: "No Aplica",
+                        municipio: "PuebloRico",
+                        name: "El viajero Hospedaje",
+                        type: "Urbano",
+                        alto: 55000,
+                        bajo: 45000,
+
                         ota: false,
                     },
                 ],
@@ -788,27 +875,39 @@ export default function getCoordinates(municipio) {
                 ],
                 hotels: [
                     {
+                        municipio: "Caramanta",
                         name: "Hotel la Ruana Caramanta",
-                        rating: 4,
                         type: "Urbano",
+                        alto: 80000,
+                        bajo: 80000,
+
                         ota: false,
                     },
                     {
+                        municipio: "Caramanta",
                         name: "Hotel el Abuelo",
-                        rating: 3,
                         type: "Urbano",
+                        alto: 80000,
+                        bajo: 80000,
+
                         ota: false,
                     },
                     {
+                        municipio: "Caramanta",
                         name: "Hotel El Patio",
-                        rating: 2,
                         type: "Urbano",
+                        alto: "",
+                        bajo: "",
+
                         ota: false,
                     },
                     {
+                        municipio: "Caramanta",
                         name: "Finca Hotel El Rancho de Monchito",
-                        rating: 5,
                         type: "Campestre",
+                        alto: 130000,
+                        bajo: 100000,
+
                         ota: false,
                     },
                 ],
@@ -833,16 +932,28 @@ export default function getCoordinates(municipio) {
                 ],
                 hotels: [
                     {
-                        name: "Hotel La Casona",
-                        rating: 4,
-                        type: "Urbano",
+                        municipio: "Montebello",
+                        name: "Meraki EcoLodge",
+                        type: "Campestre",
+                        alto: "",
+                        bajo: "",
                         ota: false,
                     },
                     {
-                        name: "Hotel La Cabaña",
-                        rating: 3,
+                        municipio: "Montebello",
+                        name: "Hotel Escorial Montebello",
                         type: "Urbano",
+                        alto: 75000,
+                        bajo: 60000,
                         ota: false,
+                    },
+                    {
+                        municipio: "Montebello",
+                        name: "Cabañas Las Nenas",
+                        type: "Campestre",
+                        alto: 180000,
+                        bajo: 140000,
+                        ota: true,
                     },
                 ],
             };
@@ -872,72 +983,659 @@ export default function getCoordinates(municipio) {
 
 /*
 Hoteles
-Municipio	Nombre Hotel 	Tipo de Hotel	Tarifa T Alta	Tarifa T Baja 	Redes Sociales	Contacto	OTA'S
-Caramanta	Hotel la Ruana Caramanta	Urbano	80000 Imp Inc	80000 Imp Inc	hotellaruanacaramanta 5.4k	3174417632	no
-Caramanta	Hotel el Abuelo 	Urbano	80000  Imp Inc	80000  Imp Inc	hotelabuelocaramanta 7.3	3182036624/3046006511	no
-Caramanta	Hotel El Patio	Urbano	Ya no exixte. 	Ya no exixte. 	no	3022599649	no
-Caramanta	Finca Hotel El Rancho de Monchito	Campestre	110 - 150 Imp Inc	80 - 120 Imp Inc	elranchode_monchito 499	3183251118	no
-La Pintada	Hotel Real Dinastia 	Campestre	360000 + 68 Imp	253000 + 50 Imp	hotelrealdinastia	3187072114	si
-La Pintada	Hotel Villa Camila	Campestre	 356000 Imp Inc	 405000 Imp Inc	villacamilahotel 	3052367136	si
-La Pintada	Hotel Los Molinos   	Urbano	60000  Imp Inc	85000 Imp Inc	hotellosmolinoslp	3136410904	no
-La Pintada	Hotel Omni La Pintada	Urbano	80000 Imp Inc	110000  Imp Inc	hotelomnilp	3136410904	no
-Valparaiso	Hotel la Ceiba	Urbano	168000 Inc Imp	180000 Imp Inc	hotellaceibavalparaiso	3022342244	si
-Valparaiso	Hotel Las Vegas	Urbano 	75000 Imp Inc	65000 Imp Inc	valparaisolasvegas	3148362031	no
-Valparaiso	Hotel Guadalejo	Campestre	280000 Imp Inc	340000 Imp Inc	ecohotel_guadalejo	3226880992	no
-Valparaiso	La Posada Del Palmar	Urbano	85000 Imp Inc	75000 Imp Inc	hotel_laposadaelpalmar	6044843791  6048493791	no
-Jerico	Hotel Atenas Jericó	Urbano	200000 Imp Inc	140000 Imp Inc	hotelatenasjerico	3127693291	si
-Jerico	Casa Jacaranda Hotel Boutique	Campestre	490000 Imp Inc	550000 Imp Inc	hotel_casa_jacaranda	3173780567	si
-Jerico	Hotel Santa Laura	Urbano	350000 Imp Inc	210000 Imp Inc	hotelsantalaurajerico	3124086033	si
-Jerico	Hotel de Cauca Viejo	Campestre	710.000 +  148.900 Imp	439200 + 97460 Imp Imp	caucaviejo	6015879566	si
-Tamesis	Casa Hotel La Albertina 	Urbano - Campestre	250000 Imp Inc	250000 Imp Inc	la_albertina_tamesis	3205218750	no
-Tamesis	Monte Mágico Chalets	Campestre	380000  Imp Inc	360000  Imp Inc	montemagicotamesis	3013354728	si
-Tamesis	Hotel Vegas del Rio	Urbano	90 - 140 Imp Inc	80 - 120 Imp Inc	hotelvegasdelrio	3002777549	no
-Tamesis	Hotel Boutique Cetro	Campestre	330 - 470 Imp Inc	260 - 350 Imp Inc	hotelcetro	3007710429	no
-Santa Barbara	Anthalia Glamping	Campestre	612.000 + 61.200 Imp	342.000 + 34.200 Imp	anthalia.glamping	3113455073	si
-Santa Barbara	Finca Villa Celina	Campestre	300000 - 350000 Imp Inlc	230000 - 250000 Imp Inc	fincavillacelinast	3162280213	no
-Santa Barbara	Hotel el Castillo	Urbano	150000 Imp Inc	130000 Imp Inc	elcastillosanta_	3023607258	no
-Santa Barbara	Cabañas la Amapolita (Versalles - St. B)	Campestre	420000 Imp Inc	350000 Imp Inc	cabanas_la_amapolita	3225765639	si
-Venecia	Hotel Granja del Café	Campestre	 429000 Imp Inc	290000 Imp Inc	granjadelcafe 	3002514035	si
-Venecia	La Divisa Hotel Boutique	Campestre	470.000 + 137 Imp	319.000 + 93000 Imp	ladivisa_finca	3014026356	si
-Venecia	Nativo Hostel Venecia	Urbano	135000 + 39000 Imp	94000 + 28000 Imp	nativohostelvenecia	3106151833	si
-Venecia	Finca Hotel Carmonia del Bosque	Campestre	286.000 Imp Inc	286.000 Imp Inc	carmoniadelbosque	300 786 11 19.	si
-PuebloRico	El viajero Hospedaje	Urbano	55000 Imp Inc	45000 Imp Inc	hotel_el_viajero_pueblorrico	3136447427	no
-PuebloRico	No Aplica	No Aplica	No Aplica	No Aplica	No Aplica	no	
-PuebloRico	No Aplica	No Aplica	No Aplica	No Aplica	No Aplica	no	no
-PuebloRico	No Aplica	No Aplica	No Aplica	No Aplica	No Aplica	no	no
-Fredonia	Prana Cabañas Fredonia	Campestre	160000 Imp Inc	140000 Imp Inc	prana.cabana	3147270138	
-Fredonia	Glamping Encanto de Luna	Campestre	350000 Imp Inc	300000 Imp Inc	glampingencantodeluna	3206641951	si
-Fredonia	Hotel Boutique Tahití	Campestre	659000 + 126000 Imp	 644120 + 122400 Imp	tahitihotel	3243008934	si
-Fredonia	Hotel Hacienda La Sierra	Campestre	750000 Imp Inc	550000 Imp Inc	haciendalasierra	3244532154	si
-Montebello	Meraki EcoLodge	Campestre			merakiecolodge	3183407703	no
-Montebello	Hotel Escorial Montebello 	Urbano	75000 Imp Inc	60000 Imp Inc	elescorialhotel	3126157201	no
-Montebello	Cabañas Las Nenas	Campestre	180000 Imp Inc	140000 Imp Inc	no	3122882798 - 	si
-Montebello	No Aplica	No Aplica	No Aplica	No Aplica	No Aplica	No Aplica	no
-Tarso	Reserva la Colina	Campestre	165000 Imp Inc	145000 Imp Inc	reservalacolina_	 313 5969025	si
-Tarso	No Aplica	No Aplica	No Aplica	No Aplica	No Aplica	No Aplica	no
-Tarso	No Aplica	No Aplica	No Aplica	No Aplica	No Aplica	No Aplica	no
-Tarso	No Aplica	No Aplica	No Aplica	No Aplica	No Aplica	No Aplica	no
-Urrao	Hotel Colonial Urrao	Urbano	95000 Imp Inc	90000 Imp Inc	hotelcolonialurrao	323 4935313	no
-Urrao	Hotel Flores del Paraiso Urrao	Urbano	136000 Imp Inc	126000 Imp Inc	hotelfloresdelparaisourrao	3104151508	no
-Urrao	Parque Orquideas	Urbano	80000 Imp Inc	80000 Imp Inc	hotelorquideasurrao	3216100525	si
-Urrao	Hotel el Turista de Urrao	Urbano	70000 Imp Inc	70000 Imp Inc	elturistadeurrao	3117152545	no
-Jardin	Casa Passiflora Hotel Boutique	Campestre	 626480 + 119000 Imp	433600 + 82400 Imp	hotel_casa_passiflora	3182421000	si
-Jardin	Gulupa Ecolodge	Campestre	 502800 Imp Inc	342000 Imp Inc	gulupaecolodge 	3023801155	si
-Jardin	Candileja hostel	Urbano	129000 Imp Inc	119000 Imp Inc	candilejahostel	3226818994	si
-Jardin	Hotel Plantacion	Urbano	356000 + 68000 Imp	336000 + 64000 Imp	hotelplantacion	3138501833	si
-Jardin	Hotel Lago Valdivia	Campestre	689000 + 109000 Imp	 667000 + 109000 Imp	hotelrestaurantelagovaldivia	3113897979	si
-Amaga	Hotel Casa Real Amaga	Urbano	95000 Imp Inc	90000 Imp Inc	hotelcasarealamaga	3128046532	no
-Amaga	Hotel Campestre Amaga	Urbano 	70000 Imp Inc	70000 Imp Inc	hotel_campestre_amaga	3194978674	no
-Amaga	Hotel Glamping la Polka	Campestre	489000 Imp Inc	289000 Imp Inc	hotelglamping	3118394652	no
-Amaga	Hotel Hacienda La Bonita	Campestre	421000 + 122000 Imp	144000 + 42000 Imp	hotelhaciendalabonita	3022457691  3052327998	si
-Ciudad Bolivar	Hotel Los Vitrales	Urbano	120000 Imp Inc	92000 Imp Inc	hotellosvitrales	3113095317	no
-Ciudad Bolivar	Residencia Su Casa 	Urbano	65000 Imp Inc	65000 Imp Inc	residenciasucasa	3206972127	no
-Ciudad Bolivar	Hotel Farallones del Citara	Campestre	450000 Imp Inc	360000 Imp Inc	hotelfarallonesdelcitara	3127789739	no
-Ciudad Bolivar	Finca Hotel Lagos del Citara	Campestre	220000 Imp Inc	200000 Imp Inc	fincahotellagosdelcitara	3122989290	no
-Andes	Hotel San Juan Andes	Urbano	94000 Imp Inc	94000 Imp	sanjuan.hotelandes	3117456624	no
-Andes	Finca Hotel Arrayanes	Campestre	220000 Imp Inc	200000 Imp Inc	fincahotelarrayanes	3108339740	no
-Andes	Altos del Molino	Campestre	120000 Imp Inc	105000 Imp Inc	altosdelmolino_	3114361768	si
-Andes	Hotel Ecológico Otrolado Lodge	Campestre	160000 Imp Inc	140000 Imp Inc	No Aplica	3002066029	si
+[
+  {
+    "municipio": "Caramanta",
+    "name": "Hotel la Ruana Caramanta",
+    "type": "Urbano",
+    "alto": "80000",
+    "bajo": "80000",
+    "Redes Sociales": "hotellaruanacaramanta 5.4k",
+    "Contacto": 3174417632,
+    "ota": false
+  },
+  {
+    "municipio": "Caramanta",
+    "name": "Hotel el Abuelo",
+    "type": "Urbano",
+    "alto": "80000 ",
+    "bajo": "80000 ",
+    "Redes Sociales": "hotelabuelocaramanta 7.3",
+    "Contacto": "3182036624/3046006511",
+    "ota": false
+  },
+  {
+    "municipio": "Caramanta",
+    "name": "Hotel El Patio",
+    "type": "Urbano",
+    "alto": "Ya no exixte.",
+    "bajo": "Ya no exixte.",
+    "Redes Sociales": false,
+    "Contacto": 3022599649,
+    "ota": false
+  },
+  {
+    "municipio": "Caramanta",
+    "name": "Finca Hotel El Rancho de Monchito",
+    "type": "Campestre",
+    "alto": "110 - 150",
+    "bajo": "80 - 120",
+    "Redes Sociales": "elranchode_monchito 499",
+    "Contacto": 3183251118,
+    "ota": false
+  },
+  {
+    "municipio": "La Pintada",
+    "name": "Hotel Real Dinastia",
+    "type": "Campestre",
+    "alto": "360000 + 68 Imp",
+    "bajo": "253000 + 50 Imp",
+    "Redes Sociales": "hotelrealdinastia",
+    "Contacto": 3187072114,
+    "ota": true
+  },
+  {
+    "municipio": "La Pintada",
+    "name": "Hotel Villa Camila",
+    "type": "Campestre",
+    "alto": "356000",
+    "bajo": "405000",
+    "Redes Sociales": "villacamilahotel",
+    "Contacto": 3052367136,
+    "ota": true
+  },
+  {
+    "municipio": "La Pintada",
+    "name": "Hotel Los Molinos",
+    "type": "Urbano",
+    "alto": "60000 ",
+    "bajo": "85000",
+    "Redes Sociales": "hotellosmolinoslp",
+    "Contacto": 3136410904,
+    "ota": false
+  },
+  {
+    "municipio": "La Pintada",
+    "name": "Hotel Omni La Pintada",
+    "type": "Urbano",
+    "alto": "80000",
+    "bajo": "110000 ",
+    "Redes Sociales": "hotelomnilp",
+    "Contacto": 3136410904,
+    "ota": false
+  },
+  {
+    "municipio": "Valparaiso",
+    "name": "Hotel la Ceiba",
+    "type": "Urbano",
+    "alto": "168000 Inc Imp",
+    "bajo": "180000",
+    "Redes Sociales": "hotellaceibavalparaiso",
+    "Contacto": 3022342244,
+    "ota": true
+  },
+  {
+    "municipio": "Valparaiso",
+    "name": "Hotel Las Vegas",
+    "type": "Urbano",
+    "alto": "75000",
+    "bajo": "65000",
+    "Redes Sociales": "valparaisolasvegas",
+    "Contacto": 3148362031,
+    "ota": false
+  },
+  {
+    "municipio": "Valparaiso",
+    "name": "Hotel Guadalejo",
+    "type": "Campestre",
+    "alto": "280000",
+    "bajo": "340000",
+    "Redes Sociales": "ecohotel_guadalejo",
+    "Contacto": 3226880992,
+    "ota": false
+  },
+  {
+    "municipio": "Valparaiso",
+    "name": "La Posada Del Palmar",
+    "type": "Urbano",
+    "alto": "85000",
+    "bajo": "75000",
+    "Redes Sociales": "hotel_laposadaelpalmar",
+    "Contacto": "6044843791  6048493791",
+    "ota": false
+  },
+  {
+    "municipio": "Jerico",
+    "name": "Hotel Atenas Jericó",
+    "type": "Urbano",
+    "alto": "200000",
+    "bajo": "140000",
+    "Redes Sociales": "hotelatenasjerico",
+    "Contacto": 3127693291,
+    "ota": true
+  },
+  {
+    "municipio": "Jerico",
+    "name": "Casa Jacaranda Hotel Boutique",
+    "type": "Campestre",
+    "alto": "490000",
+    "bajo": "550000",
+    "Redes Sociales": "hotel_casa_jacaranda",
+    "Contacto": 3173780567,
+    "ota": true
+  },
+  {
+    "municipio": "Jerico",
+    "name": "Hotel Santa Laura",
+    "type": "Urbano",
+    "alto": "350000",
+    "bajo": "210000",
+    "Redes Sociales": "hotelsantalaurajerico",
+    "Contacto": 3124086033,
+    "ota": true
+  },
+  {
+    "municipio": "Jerico",
+    "name": "Hotel de Cauca Viejo",
+    "type": "Campestre",
+    "alto": "710.000 +  148.900 Imp",
+    "bajo": "439200 + 97460 Imp Imp",
+    "Redes Sociales": "caucaviejo",
+    "Contacto": 6015879566,
+    "ota": true
+  },
+  {
+    "municipio": "Tamesis",
+    "name": "Casa Hotel La Albertina",
+    "type": "Urbano - Campestre",
+    "alto": "250000",
+    "bajo": "250000",
+    "Redes Sociales": "la_albertina_tamesis",
+    "Contacto": 3205218750,
+    "ota": false
+  },
+  {
+    "municipio": "Tamesis",
+    "name": "Monte Mágico Chalets",
+    "type": "Campestre",
+    "alto": "380000 ",
+    "bajo": "360000 ",
+    "Redes Sociales": "montemagicotamesis",
+    "Contacto": 3013354728,
+    "ota": true
+  },
+  {
+    "municipio": "Tamesis",
+    "name": "Hotel Vegas del Rio",
+    "type": "Urbano",
+    "alto": "90 - 140",
+    "bajo": "80 - 120",
+    "Redes Sociales": "hotelvegasdelrio",
+    "Contacto": 3002777549,
+    "ota": false
+  },
+  {
+    "municipio": "Tamesis",
+    "name": "Hotel Boutique Cetro",
+    "type": "Campestre",
+    "alto": "330 - 470",
+    "bajo": "260 - 350",
+    "Redes Sociales": "hotelcetro",
+    "Contacto": 3007710429,
+    "ota": false
+  },
+  {
+    "municipio": "Santa Barbara",
+    "name": "Anthalia Glamping",
+    "type": "Campestre",
+    "alto": "612.000 + 61.200 Imp",
+    "bajo": "342.000 + 34.200 Imp",
+    "Redes Sociales": "anthalia.glamping",
+    "Contacto": 3113455073,
+    "ota": true
+  },
+  {
+    "municipio": "Santa Barbara",
+    "name": "Finca Villa Celina",
+    "type": "Campestre",
+    "alto": "300000 - 350000 Imp Inlc",
+    "bajo": "230000 - 250000",
+    "Redes Sociales": "fincavillacelinast",
+    "Contacto": 3162280213,
+    "ota": false
+  },
+  {
+    "municipio": "Santa Barbara",
+    "name": "Hotel el Castillo",
+    "type": "Urbano",
+    "alto": "150000",
+    "bajo": "130000",
+    "Redes Sociales": "elcastillosanta_",
+    "Contacto": 3023607258,
+    "ota": false
+  },
+  {
+    "municipio": "Santa Barbara",
+    "name": "Cabañas la Amapolita (Versalles - St. B)",
+    "type": "Campestre",
+    "alto": "420000",
+    "bajo": "350000",
+    "Redes Sociales": "cabanas_la_amapolita",
+    "Contacto": 3225765639,
+    "ota": true
+  },
+  {
+    "municipio": "Venecia",
+    "name": "Hotel Granja del Café",
+    "type": "Campestre",
+    "alto": "429000",
+    "bajo": "290000",
+    "Redes Sociales": "granjadelcafe",
+    "Contacto": 3002514035,
+    "ota": true
+  },
+  {
+    "municipio": "Venecia",
+    "name": "La Divisa Hotel Boutique",
+    "type": "Campestre",
+    "alto": "470.000 + 137 Imp",
+    "bajo": "319.000 + 93000 Imp",
+    "Redes Sociales": "ladivisa_finca",
+    "Contacto": 3014026356,
+    "ota": true
+  },
+  {
+    "municipio": "Venecia",
+    "name": "Nativo Hostel Venecia",
+    "type": "Urbano",
+    "alto": "135000 + 39000 Imp",
+    "bajo": "94000 + 28000 Imp",
+    "Redes Sociales": "nativohostelvenecia",
+    "Contacto": 3106151833,
+    "ota": true
+  },
+  {
+    "municipio": "Venecia",
+    "name": "Finca Hotel Carmonia del Bosque",
+    "type": "Campestre",
+    "alto": "286.000",
+    "bajo": "286.000",
+    "Redes Sociales": "carmoniadelbosque",
+    "Contacto": "300 786 11 19.",
+    "ota": true
+  },
+  {
+    "municipio": "PuebloRico",
+    "name": "El viajero Hospedaje",
+    "type": "Urbano",
+    "alto": "55000",
+    "bajo": "45000",
+    "Redes Sociales": "hotel_el_viajero_pueblorrico",
+    "Contacto": 3136447427,
+    "ota": false
+  },
+  {
+    "municipio": "PuebloRico",
+    "name": "No Aplica",
+    "type": "No Aplica",
+    "alto": "No Aplica",
+    "bajo": "No Aplica",
+    "Redes Sociales": "No Aplica",
+    "Contacto": false,
+    "ota": ""
+  },
+  {
+    "municipio": "PuebloRico",
+    "name": "No Aplica",
+    "type": "No Aplica",
+    "alto": "No Aplica",
+    "bajo": "No Aplica",
+    "Redes Sociales": "No Aplica",
+    "Contacto": false,
+    "ota": false
+  },
+  {
+    "municipio": "PuebloRico",
+    "name": "No Aplica",
+    "type": "No Aplica",
+    "alto": "No Aplica",
+    "bajo": "No Aplica",
+    "Redes Sociales": "No Aplica",
+    "Contacto": false,
+    "ota": false
+  },
+  {
+    "municipio": "Fredonia",
+    "name": "Prana Cabañas Fredonia",
+    "type": "Campestre",
+    "alto": "160000",
+    "bajo": "140000",
+    "Redes Sociales": "prana.cabana",
+    "Contacto": 3147270138,
+    "ota": ""
+  },
+  {
+    "municipio": "Fredonia",
+    "name": "Glamping Encanto de Luna",
+    "type": "Campestre",
+    "alto": "350000",
+    "bajo": "300000",
+    "Redes Sociales": "glampingencantodeluna",
+    "Contacto": 3206641951,
+    "ota": true
+  },
+  {
+    "municipio": "Fredonia",
+    "name": "Hotel Boutique Tahití",
+    "type": "Campestre",
+    "alto": "659000 + 126000 Imp",
+    "bajo": "644120 + 122400 Imp",
+    "Redes Sociales": "tahitihotel",
+    "Contacto": 3243008934,
+    "ota": true
+  },
+  {
+    "municipio": "Fredonia",
+    "name": "Hotel Hacienda La Sierra",
+    "type": "Campestre",
+    "alto": "750000",
+    "bajo": "550000",
+    "Redes Sociales": "haciendalasierra",
+    "Contacto": 3244532154,
+    "ota": true
+  },
+  {
+    "municipio": "Montebello",
+    "name": "Meraki EcoLodge",
+    "type": "Campestre",
+    "alto": "",
+    "bajo": "",
+    "Redes Sociales": "merakiecolodge",
+    "Contacto": 3183407703,
+    "ota": false
+  },
+  {
+    "municipio": "Montebello",
+    "name": "Hotel Escorial Montebello",
+    "type": "Urbano",
+    "alto": "75000",
+    "bajo": "60000",
+    "Redes Sociales": "elescorialhotel",
+    "Contacto": 3126157201,
+    "ota": false
+  },
+  {
+    "municipio": "Montebello",
+    "name": "Cabañas Las Nenas",
+    "type": "Campestre",
+    "alto": "180000",
+    "bajo": "140000",
+    "Redes Sociales": false,
+    "Contacto": "3122882798 -",
+    "ota": true
+  },
+  {
+    "municipio": "Montebello",
+    "name": "No Aplica",
+    "type": "No Aplica",
+    "alto": "No Aplica",
+    "bajo": "No Aplica",
+    "Redes Sociales": "No Aplica",
+    "Contacto": "No Aplica",
+    "ota": false
+  },
+  {
+    "municipio": "Tarso",
+    "name": "Reserva la Colina",
+    "type": "Campestre",
+    "alto": "165000",
+    "bajo": "145000",
+    "Redes Sociales": "reservalacolina_",
+    "Contacto": "313 5969025",
+    "ota": true
+  },
+  {
+    "municipio": "Tarso",
+    "name": "No Aplica",
+    "type": "No Aplica",
+    "alto": "No Aplica",
+    "bajo": "No Aplica",
+    "Redes Sociales": "No Aplica",
+    "Contacto": "No Aplica",
+    "ota": false
+  },
+  {
+    "municipio": "Tarso",
+    "name": "No Aplica",
+    "type": "No Aplica",
+    "alto": "No Aplica",
+    "bajo": "No Aplica",
+    "Redes Sociales": "No Aplica",
+    "Contacto": "No Aplica",
+    "ota": false
+  },
+  {
+    "municipio": "Tarso",
+    "name": "No Aplica",
+    "type": "No Aplica",
+    "alto": "No Aplica",
+    "bajo": "No Aplica",
+    "Redes Sociales": "No Aplica",
+    "Contacto": "No Aplica",
+    "ota": false
+  },
+  {
+    "municipio": "Urrao",
+    "name": "Hotel Colonial Urrao",
+    "type": "Urbano",
+    "alto": "95000",
+    "bajo": "90000",
+    "Redes Sociales": "hotelcolonialurrao",
+    "Contacto": "323 4935313",
+    "ota": false
+  },
+  {
+    "municipio": "Urrao",
+    "name": "Hotel Flores del Paraiso Urrao",
+    "type": "Urbano",
+    "alto": "136000",
+    "bajo": "126000",
+    "Redes Sociales": "hotelfloresdelparaisourrao",
+    "Contacto": 3104151508,
+    "ota": false
+  },
+  {
+    "municipio": "Urrao",
+    "name": "Parque Orquideas",
+    "type": "Urbano",
+    "alto": "80000",
+    "bajo": "80000",
+    "Redes Sociales": "hotelorquideasurrao",
+    "Contacto": 3216100525,
+    "ota": true
+  },
+  {
+    "municipio": "Urrao",
+    "name": "Hotel el Turista de Urrao",
+    "type": "Urbano",
+    "alto": "70000",
+    "bajo": "70000",
+    "Redes Sociales": "elturistadeurrao",
+    "Contacto": 3117152545,
+    "ota": false
+  },
+  {
+    "municipio": "Jardin",
+    "name": "Casa Passiflora Hotel Boutique",
+    "type": "Campestre",
+    "alto": "626480 + 119000 Imp",
+    "bajo": "433600 + 82400 Imp",
+    "Redes Sociales": "hotel_casa_passiflora",
+    "Contacto": 3182421000,
+    "ota": true
+  },
+  {
+    "municipio": "Jardin",
+    "name": "Gulupa Ecolodge",
+    "type": "Campestre",
+    "alto": "502800",
+    "bajo": "342000",
+    "Redes Sociales": "gulupaecolodge",
+    "Contacto": 3023801155,
+    "ota": true
+  },
+  {
+    "municipio": "Jardin",
+    "name": "Candileja hostel",
+    "type": "Urbano",
+    "alto": "129000",
+    "bajo": "119000",
+    "Redes Sociales": "candilejahostel",
+    "Contacto": 3226818994,
+    "ota": true
+  },
+  {
+    "municipio": "Jardin",
+    "name": "Hotel Plantacion",
+    "type": "Urbano",
+    "alto": "356000 + 68000 Imp",
+    "bajo": "336000 + 64000 Imp",
+    "Redes Sociales": "hotelplantacion",
+    "Contacto": 3138501833,
+    "ota": true
+  },
+  {
+    "municipio": "Jardin",
+    "name": "Hotel Lago Valdivia",
+    "type": "Campestre",
+    "alto": "689000 + 109000 Imp",
+    "bajo": "667000 + 109000 Imp",
+    "Redes Sociales": "hotelrestaurantelagovaldivia",
+    "Contacto": 3113897979,
+    "ota": true
+  },
+  {
+    "municipio": "Amaga",
+    "name": "Hotel Casa Real Amaga",
+    "type": "Urbano",
+    "alto": "95000",
+    "bajo": "90000",
+    "Redes Sociales": "hotelcasarealamaga",
+    "Contacto": 3128046532,
+    "ota": false
+  },
+  {
+    "municipio": "Amaga",
+    "name": "Hotel Campestre Amaga",
+    "type": "Urbano",
+    "alto": "70000",
+    "bajo": "70000",
+    "Redes Sociales": "hotel_campestre_amaga",
+    "Contacto": 3194978674,
+    "ota": false
+  },
+  {
+    "municipio": "Amaga",
+    "name": "Hotel Glamping la Polka",
+    "type": "Campestre",
+    "alto": "489000",
+    "bajo": "289000",
+    "Redes Sociales": "hotelglamping",
+    "Contacto": 3118394652,
+    "ota": false
+  },
+  {
+    "municipio": "Amaga",
+    "name": "Hotel Hacienda La Bonita",
+    "type": "Campestre",
+    "alto": "421000 + 122000 Imp",
+    "bajo": "144000 + 42000 Imp",
+    "Redes Sociales": "hotelhaciendalabonita",
+    "Contacto": "3022457691  3052327998",
+    "ota": true
+  },
+  {
+    "municipio": "Ciudad Bolivar",
+    "name": "Hotel Los Vitrales",
+    "type": "Urbano",
+    "alto": "120000",
+    "bajo": "92000",
+    "Redes Sociales": "hotellosvitrales",
+    "Contacto": 3113095317,
+    "ota": false
+  },
+  {
+    "municipio": "Ciudad Bolivar",
+    "name": "Residencia Su Casa",
+    "type": "Urbano",
+    "alto": "65000",
+    "bajo": "65000",
+    "Redes Sociales": "residenciasucasa",
+    "Contacto": 3206972127,
+    "ota": false
+  },
+  {
+    "municipio": "Ciudad Bolivar",
+    "name": "Hotel Farallones del Citara",
+    "type": "Campestre",
+    "alto": "450000",
+    "bajo": "360000",
+    "Redes Sociales": "hotelfarallonesdelcitara",
+    "Contacto": 3127789739,
+    "ota": false
+  },
+  {
+    "municipio": "Ciudad Bolivar",
+    "name": "Finca Hotel Lagos del Citara",
+    "type": "Campestre",
+    "alto": "220000",
+    "bajo": "200000",
+    "Redes Sociales": "fincahotellagosdelcitara",
+    "Contacto": 3122989290,
+    "ota": false
+  },
+  {
+    "municipio": "Andes",
+    "name": "Hotel San Juan Andes",
+    "type": "Urbano",
+    "alto": "94000",
+    "bajo": "94000 Imp",
+    "Redes Sociales": "sanjuan.hotelandes",
+    "Contacto": 3117456624,
+    "ota": false
+  },
+  {
+    "municipio": "Andes",
+    "name": "Finca Hotel Arrayanes",
+    "type": "Campestre",
+    "alto": "220000",
+    "bajo": "200000",
+    "Redes Sociales": "fincahotelarrayanes",
+    "Contacto": 3108339740,
+    "ota": false
+  },
+  {
+    "municipio": "Andes",
+    "name": "Altos del Molino",
+    "type": "Campestre",
+    "alto": "120000",
+    "bajo": "105000",
+    "Redes Sociales": "altosdelmolino_",
+    "Contacto": 3114361768,
+    "ota": true
+  },
+  {
+    "municipio": "Andes",
+    "name": "Hotel Ecológico Otrolado Lodge",
+    "type": "Campestre",
+    "alto": "160000",
+    "bajo": "140000",
+    "Redes Sociales": "No Aplica",
+    "Contacto": 3002066029,
+    "ota": true
+  }
+]
+
 
 
 */

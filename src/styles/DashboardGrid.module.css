@@ -59,6 +59,14 @@
     gap: var(--padding-block-small);
 }
 
+.graphContainer {
+    min-height: 400px;
+}
+
+.barGraph {
+    width: 100%;
+}
+
 .ratingItem {
     display: flex;
     flex-direction: row;

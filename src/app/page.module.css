@@ -19,7 +19,7 @@
     align-items: center;
     gap: var(--gap-small);
     position: relative;
-    height: 20rem;
+    padding-block: var(--padding-block-large);
     width: 100%;
 }
 
@@ -73,16 +73,4 @@
     margin-block-end: var(--gap-large);
     padding-inline: var(--padding-inline-large);
     max-width: var(--max-width);
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-}
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
 }

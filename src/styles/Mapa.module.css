@@ -10,8 +10,8 @@
 }
 .card {
     position: absolute;
-    bottom: var(--padding-block-medium);
-    left: var(--padding-inline-medium);
+    bottom: calc(var(--padding-inline-small) - 5px);
+    left: var(--padding-inline-small);
     font-size: var(--font-size-small);
     z-index: 1;
     font-weight: bold;
