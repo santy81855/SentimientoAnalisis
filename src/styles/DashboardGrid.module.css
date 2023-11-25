@@ -26,7 +26,8 @@
     min-height: 12rem;
     background-color: rgb(255, 255, 255);
     border-radius: var(--border-radius);
-    padding: var(--padding-block-medium);
+    padding-inline: var(--padding-block-medium);
+    padding-block: var(--padding-block-medium);
     gap: var(--padding-block-medium);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
@@ -43,7 +44,8 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: var(--padding-block-medium);
-    padding: var(--padding-block-medium);
+    padding-inline: var(--padding-block-medium);
+    padding-block: var(--padding-block-medium);
     flex-grow: 1;
     min-height: 12rem;
     background-color: white;
@@ -65,6 +67,7 @@
 
 .barGraph {
     width: 100%;
+    font-size: var(--font-size-small);
 }
 
 .ratingItem {

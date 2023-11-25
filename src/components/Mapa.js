@@ -10,6 +10,19 @@ const Mapa = () => {
     const municipio = searchParams.get("municipio") || "Amagá";
     const coordinates = getCoordinates(municipio);
     const position = { lat: coordinates.latitude, lng: coordinates.longitude };
+    const card = (
+        <div className={styles.card}>
+            <Image
+                src={coordinates.url}
+                width={1600}
+                height={900}
+                alt="Background image"
+                className={styles.image}
+                quality={65}
+                priority={true}
+            />
+        </div>
+    );
     return (
         <main className={styles.main}>
             <div className={styles.card}>
@@ -23,6 +36,23 @@ const Mapa = () => {
                     priority={true}
                 />
             </div>
+            <section className={styles.mapOverlay}>
+                <div className={styles.titleContainer}>
+                    <i className={`fa-solid fa-compass`}></i>
+                    <p className={styles.title}>{municipio}</p>
+                </div>
+                <div className={styles.imageContainer}>
+                    <Image
+                        src={coordinates.url}
+                        width={1600}
+                        height={900}
+                        alt="Background image"
+                        className={styles.locationImage}
+                        quality={65}
+                        priority={true}
+                    />
+                </div>
+            </section>
             <APIProvider apiKey={"AIzaSyBXp3swOU8DtCEqJRSHPd5axh0VmLIfIoo"}>
                 <Map
                     center={position}
