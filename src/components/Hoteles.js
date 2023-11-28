@@ -1,6 +1,7 @@
 "use client";
 import styles from "../styles/DashboardGrid.module.css";
 import getCoordinates from "../lib/coordinates";
+import Lista from "./Lista";
 
 import React, { PureComponent } from "react";
 import {
@@ -82,6 +83,7 @@ const Hoteles = ({ municipio }) => {
                         />
                     </BarChart>
                 </ResponsiveContainer>
+                <Lista municipio={municipio} />
             </div>
         </>
     );
