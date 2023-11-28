@@ -6,11 +6,14 @@
 .map {
     height: 100%;
     width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
+
 .card {
     position: absolute;
     bottom: calc(var(--padding-inline-small) - 5px);
-    left: var(--padding-inline-small);
+    left: calc(var(--padding-inline-small) - 5px);
     font-size: var(--font-size-small);
     z-index: 1;
     font-weight: bold;
@@ -38,17 +41,19 @@
     left: 0;
     height: 100%;
     width: 40%;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 290px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: var(--gap-small);
     padding-inline: var(--padding-inline-medium);
     padding-block: var(--padding-block-medium);
     z-index: 1;
-    max-width: 50%;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 0px 4px 0px rgba(0, 0, 0, 0.4);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
 }
 
 .titleContainer {
@@ -83,7 +88,6 @@
 
 .mapOverlay .imageContainer .locationImage {
     border-radius: var(--border-radius);
-    outline: 1px solid white;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     background-position: center;
     background-size: cover;
@@ -92,7 +96,7 @@
     width: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .mapOverlay {
         display: none;
     }
