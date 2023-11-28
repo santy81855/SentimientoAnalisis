@@ -83,8 +83,8 @@ const Hoteles = ({ municipio }) => {
                         />
                     </BarChart>
                 </ResponsiveContainer>
-                <Lista municipio={municipio} />
             </div>
+            <Lista municipio={municipio} />
         </>
     );
 };
