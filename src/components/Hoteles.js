@@ -3,7 +3,7 @@ import styles from "../styles/DashboardGrid.module.css";
 import getCoordinates from "../lib/coordinates";
 import Lista from "./Lista";
 
-import React, { PureComponent } from "react";
+import React, { useState, PureComponent } from "react";
 import {
     BarChart,
     Bar,
@@ -18,35 +18,23 @@ import {
 
 const Hoteles = ({ municipio }) => {
     const coordinates = getCoordinates(municipio);
+    const [isOpen, setIsOpen] = useState(true);
     const hotels = coordinates.hotels;
-    const ratingClass = {
-        1: styles.ratingBar20,
-        2: styles.ratingBar40,
-        3: styles.ratingBar60,
-        4: styles.ratingBar80,
-        5: styles.ratingBar100,
-    };
-    /*
-<div key={index} className={styles.ratingItem}>
-                        <p className={styles.name}>{hotel.name}</p>
-                        <div className={styles.ratingBarBackground}>
-                            <div className={ratingClass[hotel.rating]}></div>
-                        </div>
-                    </div>
-    */
-
-    /*
-{hotels.map((hotel, index) => (
-                        <p>{hotel.low}</p>
-                    ))}
-                    */
 
     return (
         <>
             <div className={styles.bottomItemTitleContainer}>
-                <p className={styles.title}>Hoteles</p>
+                <div className={styles.itemRowContainer}
+                    onClick={() => {
+                        setIsOpen(!isOpen);
+                    }}
+                >
+                    <p className={styles.title}>Hoteles</p>
+                    <button className={styles.arrowButton}
+                    ><i className={isOpen ? "fa-solid fa-chevron-up" : "fa-solid fa-chevron-down"}></i></button>
+                </div>
             </div>
-            <div
+            {isOpen && <div
                 className={`${styles.ratingContainer} ${styles.graphContainer}`}
             >
                 <ResponsiveContainer width="100%" height="100%">
@@ -83,8 +71,9 @@ const Hoteles = ({ municipio }) => {
                         />
                     </BarChart>
                 </ResponsiveContainer>
-            </div>
-            <Lista municipio={municipio} />
+            </div>}
+            {isOpen && <Lista municipio={municipio} />}
+
         </>
     );
 };

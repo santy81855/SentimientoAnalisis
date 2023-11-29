@@ -1,45 +1,52 @@
+'use client';
 import styles from "../styles/DashboardGrid.module.css";
 import getCoordinates from "../lib/coordinates";
+import axios from "axios";
+import React, { useState } from "react";
 
 const Restaurantes = ({ municipio }) => {
+    const [isOpen, setIsOpen] = useState(true);
     const coordinates = getCoordinates(municipio);
     const restaurants = coordinates.restaurants;
-    const ratingClass = {
-        1: styles.ratingBar20,
-        2: styles.ratingBar40,
-        3: styles.ratingBar60,
-        4: styles.ratingBar80,
-        5: styles.ratingBar100,
+    /*
+    const getData = async()=>{
+        await axios.get("api/get-excel-data").then((res)=>{console.log(res)}).catch((error)=>{});
     };
-    console.log(restaurants);
+    */
     return (
         <>
             <div className={styles.bottomItemTitleContainer}>
-                <p className={styles.title}>Restaurantes</p>
-                <p className={styles.subTitle}>Calificacion de 1 a 5</p>
+                <div className={styles.itemRowContainer}
+                    onClick={() => {
+                        setIsOpen(!isOpen);
+                    }}
+                >
+                    <p className={styles.title}>Restaurantes</p>
+                    <button className={styles.arrowButton}
+                    ><i className={isOpen ? "fa-solid fa-chevron-up" : "fa-solid fa-chevron-down"}></i></button>
+                </div>
             </div>
-            <div className={styles.ratingContainer}>
+            {isOpen && <div className={styles.ratingContainer}>
                 <div className={styles.ratingItem}>
                     <p className={styles.name}></p>
-                    <div className={styles.ratingBarLegend}>
-                        <p>1</p>
-                        <p>2</p>
-                        <p>3</p>
-                        <p>4</p>
-                        <p>5</p>
-                    </div>
+
                 </div>
                 {restaurants.map((restaurant, index) => (
                     <div key={index} className={styles.ratingItem}>
                         <p className={styles.name}>{restaurant.name}</p>
-                        <div className={styles.ratingBarBackground}>
-                            <div
-                                className={ratingClass[restaurant.rating]}
-                            ></div>
+                        <div
+                            className={styles.starContainer}
+                        >
+                            {Array.from({ length: restaurant.rating }).map((_, index) => (
+                                <i key={index} className={`fa-solid fa-star ${styles.star}`}></i>
+                            ))}
+                            {Array.from({ length: 5 - restaurant.rating }).map((_, index) => (
+                                <i key={index} className={`fa-regular fa-star ${styles.star}`}></i>
+                            ))}
                         </div>
                     </div>
                 ))}
-            </div>
+            </div>}
         </>
     );
 };

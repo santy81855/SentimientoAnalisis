@@ -2,6 +2,7 @@ import styles from "../styles/DashboardGrid.module.css";
 import Mapa from "./Mapa";
 import Restaurantes from "./Restaurantes";
 import Hoteles from "./Hoteles";
+import Indices from "./Indices";
 
 //svgPi svgPi25
 const DashboardGrid = ({ municipio }) => {
@@ -10,42 +11,11 @@ const DashboardGrid = ({ municipio }) => {
             <div className={styles.mapItem}>
                 <Mapa />
             </div>
+            <p className={styles.sectionTitle}>Analisis de Sentimiento</p>
             <div className={styles.topItem}>
-                <div className={styles.topItemTitleContainer}>
-                    <p className={styles.title}>Índices de satisfacción</p>
-                    <p className={styles.subTitle}>
-                        Octubre / variación interanual
-                    </p>
-                </div>
-                <div className={styles.chartContainer}>
-                    <div className={styles.chartItemContainer}>
-                        <svg className={`${styles.svgPi} ${styles.svgPi85}`}>
-                            <circle className={styles.svgPiTrack} />
-                            <circle className={styles.svgPiIndicator} />
-                        </svg>
-                        <p className={styles.circleText}>85%</p>
-                        <p className={styles.chartTitle}>GASTRONOMIA</p>
-                    </div>
-                    <div className={styles.chartItemContainer}>
-                        <svg className={`${styles.svgPi} ${styles.svgPi77}`}>
-                            <circle className={styles.svgPiTrack} />
-                            <circle className={styles.svgPiIndicator} />
-                        </svg>
-                        <p className={styles.circleText}>77%</p>
-                        <p className={styles.chartTitle}>GENERAL</p>
-                    </div>
-                    <div className={styles.chartItemContainer}>
-                        <svg className={`${styles.svgPi} ${styles.svgPi73}`}>
-                            <circle className={styles.svgPiTrack} />
-                            <circle className={styles.svgPiIndicator} />
-                        </svg>
-                        <p className={styles.circleText}>73%</p>
-                        <p className={styles.chartTitle}>
-                            SATISFACCIÓN HOTELERA (HSI)
-                        </p>
-                    </div>
-                </div>
+                <Indices />
             </div>
+            <p className={styles.sectionTitle}>Analisis Descriptivo</p>
             <div className={styles.bottomItemContainer}>
                 <div className={styles.bottomItem}>
                     <Restaurantes municipio={municipio} />

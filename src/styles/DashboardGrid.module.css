@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--padding-inline-small);
+    gap: var(--padding-inline-medium);
 }
 
 .topRow {
@@ -18,12 +18,19 @@
     height: 20rem;
 }
 
+.sectionTitle {
+    width: 100%;
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    text-align: center;
+    padding-block: var(--padding-block-small);
+}
+
 .topItem {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    min-height: 12rem;
     background-color: rgb(255, 255, 255);
     border-radius: var(--border-radius);
     padding-inline: var(--padding-block-medium);
@@ -47,10 +54,25 @@
     padding-inline: var(--padding-block-medium);
     padding-block: var(--padding-block-medium);
     flex-grow: 1;
-    min-height: 12rem;
     background-color: white;
     border-radius: var(--border-radius);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.itemRowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: var(--padding-inline-small);
+    cursor: pointer;
+}
+
+.arrowButton {
+    background-color: transparent;
+    border: none;
+    font-size: var(--font-size-large);
+    cursor: pointer;
 }
 
 .ratingContainer {
@@ -82,83 +104,15 @@
 
 .ratingItem .name {
     font-size: var(--font-size-small);
-    width: 20%;
 }
 
-.ratingItem .ratingBarLegend {
-    width: 50%;
-    min-width: 250px;
-    height: 2rem;
-    width: 70%;
-    flex-grow: 1;
+.ratingItem .starContainer {
     position: relative;
-    border-radius: 15px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--padding-inline-small);
 }
 
-.ratingItem .ratingBarLegend p {
-    font-size: var(--font-size-medium);
-    width: 100%;
-    text-align: right;
-}
-
-.ratingItem .ratingBarBackground {
-    width: 50%;
-    min-width: 250px;
-    height: 2rem;
-    width: 70%;
-    background-color: lightgrey;
-    flex-grow: 1;
-    position: relative;
-    border-radius: 15px;
-}
-
-.ratingItem .ratingBar20 {
-    position: absolute;
-    z-index: 1;
-    width: 20%;
-    height: 2rem;
-    background-color: #07c;
-    border-radius: 15px;
-}
-
-.ratingItem .ratingBar40 {
-    position: absolute;
-    z-index: 1;
-    width: 40%;
-    height: 2rem;
-    background-color: #07c;
-    border-radius: 15px;
-}
-
-.ratingItem .ratingBar60 {
-    position: absolute;
-    z-index: 1;
-    width: 60%;
-    height: 2rem;
-    background-color: #07c;
-    border-radius: 15px;
-}
-
-.ratingItem .ratingBar80 {
-    position: absolute;
-    z-index: 1;
-    width: 80%;
-    height: 2rem;
-    background-color: #07c;
-    border-radius: 15px;
-}
-
-.ratingItem .ratingBar100 {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 2rem;
-    background-color: #07c;
-    border-radius: 15px;
+.star {
+    color: rgb(0, 67, 116);
 }
 
 .chartContainer {
