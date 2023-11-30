@@ -40,6 +40,7 @@ const Restaurantes = ({ municipio }) => {
                             {Array.from({ length: restaurant.rating }).map((_, index) => (
                                 <i key={index} className={`fa-solid fa-star ${styles.star}`}></i>
                             ))}
+                            {restaurant.rating % 1 !== 0 && <i className={`fa-solid fa-star-half-stroke ${styles.star}`}></i>}
                             {Array.from({ length: 5 - restaurant.rating }).map((_, index) => (
                                 <i key={index} className={`fa-regular fa-star ${styles.star}`}></i>
                             ))}

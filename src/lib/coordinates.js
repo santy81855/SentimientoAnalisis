@@ -9,7 +9,7 @@ export default function getCoordinates(municipio) {
                 restaurants: [
                     {
                         name: "La Curva Del Gordo - Amagá",
-                        rating: 4,
+                        rating: 3.5,
                         type: "Campestre",
                     },
                     {
