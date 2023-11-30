@@ -1,18 +1,27 @@
 'use client';
 import styles from "../styles/DashboardGrid.module.css";
-import getCoordinates from "../lib/coordinates";
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Restaurantes = ({ municipio }) => {
     const [isOpen, setIsOpen] = useState(true);
-    const coordinates = getCoordinates(municipio);
-    const restaurants = coordinates.restaurants;
-    /*
-    const getData = async()=>{
-        await axios.get("api/get-excel-data").then((res)=>{console.log(res)}).catch((error)=>{});
-    };
-    */
+    const [selectedFilter, setSelectedFilter] = useState(0);
+    //const restaurants = coordinates.restaurants;
+    const [restaurants, setRestaurants] = useState([]);
+    useEffect(() => {
+        const getData = async () => {
+            await axios
+                .get("api/get-restaurants")
+                .then((res) => {
+                    setRestaurants(res.data);
+                })
+                .catch((error) => {
+                    alert(error);
+                });
+        };
+        getData();
+    }, []);
+
     return (
         <>
             <div className={styles.bottomItemTitleContainer}>
@@ -27,14 +36,10 @@ const Restaurantes = ({ municipio }) => {
                 </div>
             </div>
             {isOpen && <div className={styles.ratingContainer}>
-                <div className={styles.ratingItem}>
-                    <p className={styles.name}></p>
-
-                </div>
-                {restaurants.map((restaurant, index) => (
+                {restaurants.filter(item => item.municipio.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") === municipio.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")).map((restaurant, index) => (
                     <div key={index} className={styles.ratingItem}>
                         <p className={styles.name}>{restaurant.name}</p>
-                        <div
+                        {(selectedFilter === 0 && restaurant.rating !== "X" && restaurant.rating !== "?") && <div
                             className={styles.starContainer}
                         >
                             {Array.from({ length: restaurant.rating }).map((_, index) => (
@@ -44,9 +49,28 @@ const Restaurantes = ({ municipio }) => {
                             {Array.from({ length: 5 - restaurant.rating }).map((_, index) => (
                                 <i key={index} className={`fa-regular fa-star ${styles.star}`}></i>
                             ))}
-                        </div>
+                        </div>}
+                        {(selectedFilter === 0 && (restaurant.rating === "X" || restaurant.rating === "?")) && <div
+                            className={styles.starContainer}
+                        >
+
+                            {Array.from({ length: 5 }).map((_, index) => (
+                                <i key={index} className={`fa-regular fa-star ${styles.star}`}></i>
+                            ))}
+                        </div>}
+                        {(selectedFilter === 1 && restaurant.type !== "X" && restaurant.type !== "?") && <div className={styles.starContainer}>{restaurant.type}</div>
+                        }
                     </div>
                 ))}
+                <div className={styles.filterButtonContainer}>
+                    <button className={selectedFilter === 0 ? styles.filterButtonActive : styles.filterButtonInactive} onClick={() => {
+                        setSelectedFilter(0);
+                    }}>Calificación </button>
+                    <button className={selectedFilter === 1 ? styles.filterButtonActive : styles.filterButtonInactive}
+                        onClick={() => {
+                            setSelectedFilter(1);
+                        }}>Tipo</button>
+                </div>
             </div>}
         </>
     );

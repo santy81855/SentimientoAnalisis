@@ -6,62 +6,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.70279244467295,
                 zoom: 15,
                 url: "/images/mapa/amaga.jpg",
-                restaurants: [
-                    {
-                        name: "La Curva Del Gordo - Amagá",
-                        rating: 3.5,
-                        type: "Campestre",
-                    },
-                    {
-                        name: "Restaurante Soccer 7",
-                        rating: 3,
-                        type: "Campestre",
-                    },
-                    {
-                        name: "Restaurante Uripa Amaga",
-                        rating: 2,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Sacramento Restaurante Bar",
-                        rating: 5,
-                        type: "Urbano",
-                    },
-                ],
-                hotels: [
-                    {
-                        name: "Hotel Casa Real Amaga",
-                        rating: 4,
-                        type: "Urbano",
-                        otp: false,
-                        alto: 95000,
-                        bajo: 90000,
-                    },
-                    {
-                        name: "Hotel Campestre Amaga",
-                        rating: 3,
-                        type: "Urbano",
-                        otp: false,
-                        alto: 70000,
-                        bajo: 70000,
-                    },
-                    {
-                        name: "Hotel Glamping la Polka",
-                        rating: 2,
-                        type: "Campestre",
-                        otp: false,
-                        alto: 489000,
-                        bajo: 289000,
-                    },
-                    {
-                        name: "Hotel Hacienda La Bonita",
-                        rating: 5,
-                        type: "Campestre",
-                        otp: true,
-                        alto: 421000,
-                        bajo: 144000,
-                    },
-                ],
             };
         case "Fredonia":
             return {
@@ -69,57 +13,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.67157093824729,
                 zoom: 16,
                 url: "/images/mapa/fredonia.jpg",
-                restaurants: [
-                    {
-                        name: "Café Candilejas Brunch Reposteria",
-                        rating: 4,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Asados y Restaurante La Granjita",
-                        rating: 3,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Restaurante Otra Parte",
-                        rating: 2,
-                        type: "Urbano",
-                    },
-                ],
-                hotels: [
-                    {
-                        name: "Prana Cabañas Fredonia",
-                        rating: 4,
-                        type: "Campestre",
-                        otp: false,
-                        alto: 160000,
-                        bajo: 140000,
-                    },
-                    {
-                        name: "Glamping Encanto de Luna",
-                        rating: 3,
-                        type: "Campestre",
-                        otp: true,
-                        alto: 350000,
-                        bajo: 300000,
-                    },
-                    {
-                        name: "Hotel Boutique Tahití",
-                        rating: 2,
-                        type: "Campestre",
-                        otp: true,
-                        alto: 659000,
-                        bajo: 644120,
-                    },
-                    {
-                        name: "Hotel Hacienda La Sierra",
-                        rating: 5,
-                        type: "Campestre",
-                        otp: true,
-                        alto: 750000,
-                        bajo: 550000,
-                    },
-                ],
             };
         case "Andes":
             return {
@@ -127,63 +20,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.87815590124973,
                 zoom: 15,
                 url: "/images/mapa/andes.jpg",
-                restaurants: [
-                    {
-                        name: "Restaurante La Antigua",
-                        rating: 4,
-                        type: "Campestre",
-                    },
-                    {
-                        name: "Restaurante Y Cafetería El Chaparral",
-                        rating: 3,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Restaurante Casa Vieja",
-                        rating: 2,
-                        type: "No Aplica",
-                    },
-                    {
-                        name: "Restaurante W&M Andes",
-                        rating: 5,
-                        type: "No Aplica",
-                    },
-                ],
-                // hotels in andes: Hotel San Juan Andes, Finca Hotel Arrayanes, Altos del Molino, Hotel Ecológico Otrolado Lodge
-                hotels: [
-                    {
-                        name: "Hotel San Juan Andes",
-                        rating: 4,
-                        type: "Urbano",
-                        otp: false,
-                        alto: 94000,
-                        bajo: 94000,
-                    },
-                    {
-                        name: "Finca Hotel Arrayanes",
-                        rating: 3,
-                        type: "Campestre",
-                        otp: false,
-                        alto: 220000,
-                        bajo: 200000,
-                    },
-                    {
-                        name: "Altos del Molino",
-                        rating: 2,
-                        type: "Campestre",
-                        otp: true,
-                        alto: 120000,
-                        bajo: 105000,
-                    },
-                    {
-                        name: "Hotel Ecológico Otrolado Lodge",
-                        rating: 5,
-                        type: "Campestre",
-                        otp: true,
-                        alto: 160000,
-                        bajo: 140000,
-                    },
-                ],
             };
         case "Ciudad Bolívar":
             return {
@@ -191,56 +27,6 @@ export default function getCoordinates(municipio) {
                 longitude: -76.02107478919025,
                 zoom: 15,
                 url: "/images/mapa/ciudad-bolivar.jpg",
-                restaurants: [
-                    { name: "Kapeira Coffee", rating: 4, type: "Urbano" },
-                    {
-                        name: "Restaurante La Cocina del Gordo",
-                        rating: 3,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Theos Restaurante",
-                        rating: 2,
-                        type: "Campestre",
-                    },
-                    {
-                        name: "Restaurante Cielito Lindo",
-                        rating: 5,
-                        type: "Urbano",
-                    },
-                ],
-                hotels: [
-                    {
-                        name: "Hotel Los Vitrales",
-                        type: "Urbano",
-                        alto: 120000,
-                        bajo: 92000,
-                        ota: false,
-                    },
-                    {
-                        name: "Residencia Su Casa",
-                        type: "Urbano",
-                        alto: 65000,
-                        bajo: 65000,
-                        ota: false,
-                    },
-                    {
-                        municipio: "Ciudad Bolivar",
-                        name: "Hotel Farallones del Citara",
-                        type: "Campestre",
-                        alto: 450000,
-                        bajo: 360000,
-                        ota: false,
-                    },
-                    {
-                        municipio: "Ciudad Bolivar",
-                        name: "Finca Hotel Lagos del Citara",
-                        type: "Campestre",
-                        alto: 220000,
-                        bajo: 200000,
-                        ota: false,
-                    },
-                ],
             };
         case "Jardín":
             return {
@@ -248,63 +34,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.81948978778762,
                 zoom: 16,
                 url: "/images/mapa/jardin.jpg",
-                restaurants: [
-                    { name: "Bon Appetit Jardin", rating: 4, type: "Urbano" },
-                    { name: "Macanas Jardin", rating: 3, type: "Urbano" },
-                    {
-                        name: "Consulado Vegetal Jardin",
-                        rating: 2,
-                        type: "Urbano",
-                    },
-                    { name: "Mambru Jardin", rating: 5, type: "Urbano" },
-                    {
-                        name: "Hotel Restaurante Lago Valdivia",
-                        rating: 5,
-                        type: "Urbano",
-                    },
-                ],
-                hotels: [
-                    {
-                        municipio: "Jardin",
-                        name: "Casa Passiflora Hotel Boutique",
-                        type: "Campestre",
-                        alto: 746000,
-                        bajo: 516000,
-                        ota: true,
-                    },
-                    {
-                        municipio: "Jardin",
-                        name: "Gulupa Ecolodge",
-                        type: "Campestre",
-                        alto: 502800,
-                        bajo: 342000,
-                        ota: true,
-                    },
-                    {
-                        municipio: "Jardin",
-                        name: "Candileja hostel",
-                        type: "Urbano",
-                        alto: 129000,
-                        bajo: 119000,
-                        ota: true,
-                    },
-                    {
-                        municipio: "Jardin",
-                        name: "Hotel Plantacion",
-                        type: "Urbano",
-                        alto: 424000,
-                        bajo: 400000,
-                        ota: true,
-                    },
-                    {
-                        municipio: "Jardin",
-                        name: "Hotel Lago Valdivia",
-                        type: "Campestre",
-                        alto: 798000,
-                        bajo: 776000,
-                        ota: true,
-                    },
-                ],
             };
         case "Jericó":
             return {
@@ -312,67 +41,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.78512186680732,
                 zoom: 16,
                 url: "/images/mapa/jerico.jpg",
-                restaurants: [
-                    {
-                        name: "Restaurante el Solar Jerico",
-                        rating: 4,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "isabelparrillacharcuteria",
-                        rating: 3,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Bon Appetit Jerico",
-                        rating: 2,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Tomatitos Pizza y Parrilla",
-                        rating: 5,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Ay Chabela Antojos Mexicanos",
-                        rating: 5,
-                        type: "Urbano",
-                    },
-                ],
-                hotels: [
-                    {
-                        municipio: "Jerico",
-                        name: "Hotel Atenas Jericó",
-                        type: "Urbano",
-                        alto: 200000,
-                        bajo: 140000,
-                        ota: true,
-                    },
-                    {
-                        municipio: "Jerico",
-                        name: "Casa Jacaranda Hotel Boutique",
-                        type: "Campestre",
-                        alto: 490000,
-                        bajo: 550000,
-                        ota: true,
-                    },
-                    {
-                        municipio: "Jerico",
-                        name: "Hotel Santa Laura",
-                        type: "Urbano",
-                        alto: 350000,
-                        bajo: 210000,
-                        ota: true,
-                    },
-                    {
-                        municipio: "Jerico",
-                        name: "Hotel de Cauca Viejo",
-                        type: "Campestre",
-                        alto: 858000,
-                        bajo: 537000,
-                        ota: true,
-                    },
-                ],
             };
         case "La Pintada":
             return {
@@ -380,62 +48,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.60665830094318,
                 zoom: 17,
                 url: "/images/mapa/la-pintada.jpg",
-                restaurants: [
-                    {
-                        name: "Hotel y Restaurante Villa Camila",
-                        rating: 4,
-                        type: "Campestre",
-                    },
-                    {
-                        name: "Asados Doña Rosa La Pintada",
-                        rating: 3,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Antojos y delicias Bibi",
-                        rating: 2,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "La Casona Hotel y Restaurante",
-                        rating: 5,
-                        type: "Urbano",
-                    },
-                ],
-                hotels: [
-                    {
-                        municipio: "La Pintada",
-                        name: "Hotel Real Dinastia",
-                        type: "Campestre",
-                        alto: 428000,
-                        bajo: 303000,
-                        ota: true,
-                    },
-                    {
-                        municipio: "La Pintada",
-                        name: "Hotel Villa Camila",
-                        type: "Campestre",
-                        alto: 405000,
-                        bajo: 356000,
-                        ota: true,
-                    },
-                    {
-                        municipio: "La Pintada",
-                        name: "Hotel Los Molinos",
-                        type: "Urbano",
-                        alto: 85000,
-                        bajo: 60000,
-                        ota: false,
-                    },
-                    {
-                        municipio: "La Pintada",
-                        name: "Hotel Omni La Pintada",
-                        type: "Urbano",
-                        alto: 110000,
-                        bajo: 80000,
-                        ota: false,
-                    },
-                ],
             };
         case "Santa Bárbara":
             return {
@@ -443,66 +55,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.56757980599338,
                 zoom: 16,
                 url: "/images/mapa/santa-barbara.jpg",
-                restaurants: [
-                    {
-                        name: "La ilduara Restaurante Bar",
-                        rating: 4,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Santa Parrilla Burger",
-                        rating: 3,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Kokoriquisimo",
-                        rating: 2,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Restaurante Parrilla Bar El Paisaje",
-                        rating: 5,
-                        type: "Campestre",
-                    },
-                ],
-                hotels: [
-                    {
-                        municipio: "Santa Barbara",
-                        name: "Anthalia Glamping",
-                        type: "Campestre",
-                        alto: 673000,
-                        bajo: 376000,
-
-                        ota: true,
-                    },
-                    {
-                        municipio: "Santa Barbara",
-                        name: "Finca Villa Celina",
-                        type: "Campestre",
-                        alto: 325000,
-                        bajo: 240000,
-
-                        ota: false,
-                    },
-                    {
-                        municipio: "Santa Barbara",
-                        name: "Hotel el Castillo",
-                        type: "Urbano",
-                        alto: 150000,
-                        bajo: 130000,
-
-                        ota: false,
-                    },
-                    {
-                        municipio: "Santa Barbara",
-                        name: "Cabañas la Amapolita (Versalles - St. B)",
-                        type: "Campestre",
-                        alto: 420000,
-                        bajo: 350000,
-
-                        ota: true,
-                    },
-                ],
             };
         case "Támesis":
             return {
@@ -510,66 +62,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.71481777833525,
                 zoom: 16,
                 url: "/images/mapa/tamesis.png",
-                restaurants: [
-                    {
-                        name: "Charco Azul Bar Restaurante",
-                        rating: 4,
-                        type: "Campestre",
-                    },
-                    {
-                        name: "Pa Cuates",
-                        rating: 3,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Mirador del Cipres",
-                        rating: 2,
-                        type: "Campestre",
-                    },
-                    {
-                        name: "Pizzabella2016",
-                        rating: 5,
-                        type: "Urbano",
-                    },
-                ],
-                hotels: [
-                    {
-                        municipio: "Tamesis",
-                        name: "Casa Hotel La Albertina",
-                        type: "Urbano/Campestre",
-                        alto: 250000,
-                        bajo: 250000,
-
-                        ota: false,
-                    },
-                    {
-                        municipio: "Tamesis",
-                        name: "Monte Mágico Chalets",
-                        type: "Campestre",
-                        alto: 380000,
-                        bajo: 360000,
-
-                        ota: true,
-                    },
-                    {
-                        municipio: "Tamesis",
-                        name: "Hotel Vegas del Rio",
-                        type: "Urbano",
-                        alto: 115000,
-                        bajo: 100000,
-
-                        ota: false,
-                    },
-                    {
-                        municipio: "Tamesis",
-                        name: "Hotel Boutique Cetro",
-                        type: "Campestre",
-                        alto: 400000,
-                        bajo: 295000,
-
-                        ota: false,
-                    },
-                ],
             };
         case "Valparaíso":
             return {
@@ -577,59 +69,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.62463843609666,
                 zoom: 16,
                 url: "/images/mapa/valparaiso.jpg",
-                restaurants: [
-                    { name: "Mulero Café", rating: 4, type: "Campetsre" },
-                    { name: "Tejiendo Café", rating: 3, type: "Urbano" },
-                    {
-                        name: "Restaurante Los Helechos",
-                        rating: 2,
-                        type: "Urbano",
-                    },
-                    { name: "Perumania", rating: 5, type: "Urbano" },
-                    {
-                        name: "Bassilico Pasta y Parrilla",
-                        rating: 5,
-                        type: "Campestre",
-                    },
-                ],
-                hotels: [
-                    {
-                        municipio: "Valparaiso",
-                        name: "Hotel la Ceiba",
-                        type: "Urbano",
-                        alto: 168000,
-                        bajo: 180000,
-
-                        ota: true,
-                    },
-                    {
-                        municipio: "Valparaiso",
-                        name: "Hotel Las Vegas",
-                        type: "Urbano",
-                        alto: 75000,
-                        bajo: 65000,
-
-                        ota: false,
-                    },
-                    {
-                        municipio: "Valparaiso",
-                        name: "Hotel Guadalejo",
-                        type: "Campestre",
-                        alto: 280000,
-                        bajo: 340000,
-
-                        ota: false,
-                    },
-                    {
-                        municipio: "Valparaiso",
-                        name: "La Posada Del Palmar",
-                        type: "Urbano",
-                        alto: 85000,
-                        bajo: 75000,
-
-                        ota: false,
-                    },
-                ],
             };
         case "Venecia":
             return {
@@ -637,66 +76,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.73504991426107,
                 zoom: 16,
                 url: "/images/mapa/venecia.jpg",
-                restaurants: [
-                    {
-                        name: "La Italia Hosteria (Restaurante)",
-                        rating: 4,
-                        type: "Campestre",
-                    },
-                    {
-                        name: "Restaurante Bar Balcones de Venecia",
-                        rating: 3,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "LA GRACIELA, Restaurante (Café de Origen)",
-                        rating: 2,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Rústico venecia",
-                        rating: 5,
-                        type: "Urbano",
-                    },
-                ],
-                hotels: [
-                    {
-                        municipio: "Venecia",
-                        name: "Hotel Granja del Café",
-                        type: "Campestre",
-                        alto: 429000,
-                        bajo: 290000,
-
-                        ota: true,
-                    },
-                    {
-                        municipio: "Venecia",
-                        name: "La Divisa Hotel Boutique",
-                        type: "Campestre",
-                        alto: 607000,
-                        bajo: 412000,
-
-                        ota: true,
-                    },
-                    {
-                        municipio: "Venecia",
-                        name: "Nativo Hostel Venecia",
-                        type: "Urbano",
-                        alto: 174000,
-                        bajo: 122000,
-
-                        ota: true,
-                    },
-                    {
-                        municipio: "Venecia",
-                        name: "Finca Hotel Carmonia del Bosque",
-                        type: "Campestre",
-                        alto: 286000,
-                        bajo: 286000,
-
-                        ota: true,
-                    },
-                ],
             };
         case "Urrao":
             return {
@@ -704,66 +83,6 @@ export default function getCoordinates(municipio) {
                 longitude: -76.13146671902038,
                 zoom: 15,
                 url: "/images/mapa/urrao.jpg",
-                restaurants: [
-                    {
-                        name: "Restaurante Bar La Viñeda",
-                        rating: 4,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "EcoUrmet S.A.S",
-                        rating: 3,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Fonda La San Jose Restaurante Bar",
-                        rating: 2,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Casa Bistró Urrao",
-                        rating: 5,
-                        type: "Urbano",
-                    },
-                ],
-                hotels: [
-                    {
-                        municipio: "Urrao",
-                        name: "Hotel Colonial Urrao",
-                        type: "Urbano",
-                        alto: 95000,
-                        bajo: 90000,
-
-                        ota: false,
-                    },
-                    {
-                        municipio: "Urrao",
-                        name: "Hotel Flores del Paraiso Urrao",
-                        type: "Urbano",
-                        alto: 136000,
-                        bajo: 126000,
-
-                        ota: false,
-                    },
-                    {
-                        municipio: "Urrao",
-                        name: "Parque Orquideas",
-                        type: "Urbano",
-                        alto: 80000,
-                        bajo: 80000,
-
-                        ota: true,
-                    },
-                    {
-                        municipio: "Urrao",
-                        name: "Hotel el Turista de Urrao",
-                        type: "Urbano",
-                        alto: 70000,
-                        bajo: 70000,
-
-                        ota: false,
-                    },
-                ],
             };
         case "Tarso":
             return {
@@ -771,39 +90,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.82245801874683,
                 zoom: 16.5,
                 url: "/images/mapa/tarso.jpg",
-                restaurants: [
-                    {
-                        name: "Meraki Restaurante Tarso",
-                        rating: 4,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Divissa Parrilla Bar",
-                        rating: 3,
-                        type: "Campestre",
-                    },
-                    {
-                        name: "Hotel y Restaurante Balcones del Cauca",
-                        rating: 2,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Pollo Loco",
-                        rating: 5,
-                        type: "Urbano",
-                    },
-                ],
-                hotels: [
-                    {
-                        municipio: "Tarso",
-                        name: "Reserva la Colina",
-                        type: "Campestre",
-                        alto: 165000,
-                        bajo: 145000,
-
-                        ota: true,
-                    },
-                ],
             };
         case "Pueblorrico":
             return {
@@ -811,39 +97,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.84117075661426,
                 zoom: 16,
                 url: "/images/mapa/pueblorrico.jpg",
-                restaurants: [
-                    {
-                        name: "Cafetería Los Glaciares",
-                        rating: 4,
-                        type: "No Aplica",
-                    },
-                    {
-                        name: "Casas Viejas",
-                        rating: 3,
-                        type: "No Aplica",
-                    },
-                    {
-                        name: "Restaurante Mi Casita",
-                        rating: 2,
-                        type: "No Aplica",
-                    },
-                    {
-                        name: "Restaurante Dos Milagros",
-                        rating: 5,
-                        type: "No Aplica",
-                    },
-                ],
-                hotels: [
-                    {
-                        municipio: "PuebloRico",
-                        name: "El viajero Hospedaje",
-                        type: "Urbano",
-                        alto: 55000,
-                        bajo: 45000,
-
-                        ota: false,
-                    },
-                ],
             };
         case "Caramanta":
             return {
@@ -851,66 +104,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.64471547110624,
                 zoom: 16,
                 url: "/images/mapa/caramanta.png",
-                restaurants: [
-                    {
-                        name: "Mercado Campesino Caramanta",
-                        rating: 4,
-                        type: "Urbano Parque Principal",
-                    },
-                    {
-                        name: "La fonda Caramanta",
-                        rating: 3,
-                        type: "Campestre",
-                    },
-                    {
-                        name: "Las Qsuditas Asados",
-                        rating: 2,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Perumania",
-                        rating: 5,
-                        type: "Urbano",
-                    },
-                ],
-                hotels: [
-                    {
-                        municipio: "Caramanta",
-                        name: "Hotel la Ruana Caramanta",
-                        type: "Urbano",
-                        alto: 80000,
-                        bajo: 80000,
-
-                        ota: false,
-                    },
-                    {
-                        municipio: "Caramanta",
-                        name: "Hotel el Abuelo",
-                        type: "Urbano",
-                        alto: 80000,
-                        bajo: 80000,
-
-                        ota: false,
-                    },
-                    {
-                        municipio: "Caramanta",
-                        name: "Hotel El Patio",
-                        type: "Urbano",
-                        alto: "",
-                        bajo: "",
-
-                        ota: false,
-                    },
-                    {
-                        municipio: "Caramanta",
-                        name: "Finca Hotel El Rancho de Monchito",
-                        type: "Campestre",
-                        alto: 130000,
-                        bajo: 100000,
-
-                        ota: false,
-                    },
-                ],
             };
         case "Montebello":
             return {
@@ -918,44 +111,6 @@ export default function getCoordinates(municipio) {
                 longitude: -75.52398338067638,
                 zoom: 17,
                 url: "/images/mapa/montebello.jpg",
-                restaurants: [
-                    {
-                        name: "Restaurante Que Arepazo",
-                        rating: 4,
-                        type: "Urbano",
-                    },
-                    {
-                        name: "Cafetería Montebravo",
-                        rating: 3,
-                        type: "Urbano",
-                    },
-                ],
-                hotels: [
-                    {
-                        municipio: "Montebello",
-                        name: "Meraki EcoLodge",
-                        type: "Campestre",
-                        alto: "",
-                        bajo: "",
-                        ota: false,
-                    },
-                    {
-                        municipio: "Montebello",
-                        name: "Hotel Escorial Montebello",
-                        type: "Urbano",
-                        alto: 75000,
-                        bajo: 60000,
-                        ota: false,
-                    },
-                    {
-                        municipio: "Montebello",
-                        name: "Cabañas Las Nenas",
-                        type: "Campestre",
-                        alto: 180000,
-                        bajo: 140000,
-                        ota: true,
-                    },
-                ],
             };
         default:
             break;

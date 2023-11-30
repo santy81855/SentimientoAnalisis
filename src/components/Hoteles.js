@@ -1,9 +1,9 @@
 "use client";
 import styles from "../styles/DashboardGrid.module.css";
-import getCoordinates from "../lib/coordinates";
 import Lista from "./Lista";
+import axios from "axios";
 
-import React, { useState, PureComponent } from "react";
+import React, { useState, useEffect } from "react";
 import {
     BarChart,
     Bar,
@@ -17,9 +17,24 @@ import {
 } from "recharts";
 
 const Hoteles = ({ municipio }) => {
-    const coordinates = getCoordinates(municipio);
     const [isOpen, setIsOpen] = useState(true);
-    const hotels = coordinates.hotels;
+    const [selectedFilter, setSelectedFilter] = useState(0);
+    //const hotels = coordinates.hotels;
+    const [hotels, setHotels] = useState([]);
+
+    useEffect(() => {
+        const getData = async () => {
+            await axios
+                .get("api/get-hotels")
+                .then((res) => {
+                    setHotels(res.data);
+                })
+                .catch((error) => {
+                    alert(error);
+                });
+        };
+        getData();
+    }, []);
 
     return (
         <>
@@ -34,7 +49,7 @@ const Hoteles = ({ municipio }) => {
                     ><i className={isOpen ? "fa-solid fa-chevron-up" : "fa-solid fa-chevron-down"}></i></button>
                 </div>
             </div>
-            {isOpen && <div
+            {(isOpen && selectedFilter === 0) && <div
                 className={`${styles.ratingContainer} ${styles.graphContainer}`}
             >
                 <ResponsiveContainer width="100%" height="100%">
@@ -42,7 +57,7 @@ const Hoteles = ({ municipio }) => {
                         width={500}
                         height={300}
                         data={hotels.filter(
-                            (hotel) => hotel.bajo !== "" || hotel.alto !== ""
+                            (item) => (item.bajo !== "X" || item.alto !== "X") && item.municipio.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") === municipio.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")
                         )}
                         margin={{
                             top: 5,
@@ -72,8 +87,33 @@ const Hoteles = ({ municipio }) => {
                     </BarChart>
                 </ResponsiveContainer>
             </div>}
-            {isOpen && <Lista municipio={municipio} />}
 
+            {(isOpen && selectedFilter !== 0) && <div className={styles.ratingContainer}>
+                {hotels.filter(item => item.municipio.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "") === municipio.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")).map((hotel, index) => (
+                    <div key={index} className={styles.ratingItem}>
+                        <p className={styles.name}>{hotel.name}</p>
+                        {(selectedFilter === 1 && hotel.type !== "X" && hotel.type !== "?") && <div className={styles.starContainer}>{hotel.type}</div>
+                        }
+                        {(selectedFilter === 2 && hotel.ota !== "X" && hotel.ota !== "") && <div className={styles.starContainer}>{hotel.ota === true ? "Si" : "No"}</div>
+                        }
+                    </div>
+                ))}
+            </div>}
+
+            {isOpen && <Lista municipio={municipio} />}
+            {isOpen && <div className={styles.filterButtonContainer}>
+                <button className={selectedFilter === 0 ? styles.filterButtonActive : styles.filterButtonInactive} onClick={() => {
+                    setSelectedFilter(0);
+                }}>Costo</button>
+                <button className={selectedFilter === 1 ? styles.filterButtonActive : styles.filterButtonInactive}
+                    onClick={() => {
+                        setSelectedFilter(1);
+                    }}>Tipo</button>
+                <button className={selectedFilter === 2 ? styles.filterButtonActive : styles.filterButtonInactive}
+                    onClick={() => {
+                        setSelectedFilter(2);
+                    }}>OTA</button>
+            </div>}
         </>
     );
 };
