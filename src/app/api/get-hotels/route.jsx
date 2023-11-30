@@ -6,7 +6,6 @@ export async function GET(request) {
     const filePath = path.join(process.cwd(), 'public', 'datos', 'datos.xlsx');
     const sheetIndex = 1;
     const rows = await readXlsxFile(filePath, { sheet: sheetIndex });
-    //console.log(rows);
 
     // get the first non null row index
     const firstNonNullRowIndex = rows.findIndex(row => row.some(cell => cell !== null && cell !== ''));
@@ -20,8 +19,6 @@ export async function GET(request) {
         bajo: row[6],
         ota: row[9] === "si" ? true : false,
     }));
-
-    console.log(hotels.filter(item => item.name !== 'X' && item.name !== "" && item.name !== null));
 
     return NextResponse.json(hotels.filter(item => item.name !== 'X' && item.name !== "" && item.name !== null));
 }

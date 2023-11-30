@@ -5,7 +5,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-    title: "AS Research Analisis",
+    title: "AS Research Análisis ",
     description: "Pagina web para analizar datos sobre el suroeste antioqueño",
 };
 
