@@ -1,4 +1,5 @@
 'use client';
+import Lista from "./Lista";
 import styles from "../styles/DashboardGrid.module.css";
 import axios from "axios";
 import React, { useState, useEffect } from "react";

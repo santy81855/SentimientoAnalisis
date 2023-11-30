@@ -66,6 +66,7 @@
     width: 100%;
     gap: var(--padding-inline-small);
     cursor: pointer;
+    padding-block: var(--padding-block-small);
 }
 
 .arrowButton {
@@ -289,9 +290,5 @@ arcOffset = arcLength * ((100 - progress)/100)
     .ratingItem .name {
         width: 100%;
         text-align: center;
-    }
-
-    .ratingItem .ratingBarLegend {
-        display: none;
     }
 }

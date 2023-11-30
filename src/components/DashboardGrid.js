@@ -3,6 +3,7 @@ import Mapa from "./Mapa";
 import Restaurantes from "./Restaurantes";
 import Hoteles from "./Hoteles";
 import Indices from "./Indices";
+import Lista from "./Lista";
 
 //svgPi svgPi25
 const DashboardGrid = ({ municipio }) => {
@@ -11,11 +12,11 @@ const DashboardGrid = ({ municipio }) => {
             <div className={styles.mapItem}>
                 <Mapa />
             </div>
-            <p className={styles.sectionTitle}>Analisis de Sentimiento</p>
+            <p className={styles.sectionTitle}>Análisis de Sentimiento</p>
             <div className={styles.topItem}>
                 <Indices />
             </div>
-            <p className={styles.sectionTitle}>Analisis Descriptivo</p>
+            <p className={styles.sectionTitle}>Análisis Descriptivo</p>
             <div className={styles.bottomItemContainer}>
                 <div className={styles.bottomItem}>
                     <Restaurantes municipio={municipio} />
